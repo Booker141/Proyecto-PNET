@@ -18,5 +18,3 @@ Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript.
 ### * [Css3](https://www.w3schools.com/css/)
 
 Es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Es muy usado para establecer el diseño visual de los documentos web, e interfaces de usuario escritas en HTML o XHTML.
-
-# Comandos
