@@ -15,10 +15,8 @@ Es la quinta revisión importante del lenguaje básico de la World Wide Web, HTM
 
 Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico. Se utiliza principalmente en su forma del lado del cliente (client-side), implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas y JavaScript del lado del servidor (Server-side JavaScript o SSJS).
 
-### * [Css](https://www.w3schools.com/css/)
+### * [Css3](https://www.w3schools.com/css/)
 
 Es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Es muy usado para establecer el diseño visual de los documentos web, e interfaces de usuario escritas en HTML o XHTML.
-
-### CodeIgniter
 
 # Comandos
