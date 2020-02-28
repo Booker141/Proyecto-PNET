@@ -11,18 +11,20 @@
     <link href="../css/estilo.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<header class="pagina">
-    <nav class="header">
-        <a href="index.html"><img src="media/Logo.png" alt="Logo de la página web"></a>
-        <a href="index.html">Inicio</a>
-        <a href="localizacion.html">Localización</a>
-        <a href="programa.html">Programa</a>
-        <a href="conciertos.html">Conciertos</a>
-        <a href="inscripcion.html">Inscripción</a>
-        <a href="FAQ.html">FAQ</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-</header>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="media/Logo.png" alt="Logo de la página web"></a>
+        </div>
+        <nav class="header">
+            <a href="index.html">Inicio</a>
+            <a href="localizacion.html">Localización</a>
+            <a href="programa.html">Programa</a>
+            <a href="conciertos.html">Conciertos</a>
+            <a href="inscripcion.html">Inscripción</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 <section>
     <ul>
         <!--Redireccionar a artículos de la propia página. En el caso de preguntas, clasificarlas por temas-->
@@ -34,22 +36,13 @@
     </article>
 </section>
 <footer class="footer">
-    <div><p>Desarrollada por MILF Company &copy;.</p></div>
-    <h3>CONTÁCTANOS AQUÍ</h3>
-    <div>
-        <p>Dirección: Calle piano 21, Jerez de la Frontera (Cádiz)</p>
-        <p>Número de teléfono: 956032167</p>
-        <p>Correo electrónico de contacto: <a href="mailto:milf@gmail.com">milf@gmail.com</a></p>
+    <div class="columna">
+        <h3>CONTÁCTANOS AQUÍ</h3>
+            <p>Dirección: Calle piano 21, Jerez de la Frontera (Cádiz)</p>
+            <p>Número de teléfono: 956032167</p>
+            <p>Correo electrónico de contacto: <a href="mailto:milf@gmail.com">milf@gmail.com</a></p>
     </div>
-    <h3>REDES SOCIALES</h3>
-    <!-- Incluir en las redes sociales las imágenes de sus iconos-->
-    <div>
-		<p><a href="http://www.twitter.com/milf"><img src="#" alt="Logo Twitter"></a></p>
-        <p><a href="http://www.instagram.com/milf"><img src="#" alt="Logo Instagram"></a></p>
-        <p><a href="http://www.facebook.com/milf"><img src="#" alt="Logo Facebook"></a></p>
-    </div> 
-    <!-- Introducir enlaces para la navegación en el footer-->
-    <div>
+    <div class="columna">
 		<ul>
 			<li><a href="index.html">Inicio</a></li>
 			<li><a href="localizacion.html">Localización</a></li>
@@ -61,6 +54,30 @@
 			<li><a href="accesibilidad.html">Accesibilidad</a></li>
 		</ul>
     </div>
+    <div class="columna">
+        <h3>REDES SOCIALES</h3>
+        <!-- Incluir en las redes sociales las imágenes de sus iconos-->
+        <div>
+		    <p>
+                <a href="http://www.twitter.com/milf">
+                <img src="#" alt="Logo Twitter">
+                </a>Twitter: @MILF
+            </p>
+            <p>
+                <a href="http://www.twitter.com/milf">
+                <img src="#" alt="Logo Twitter">
+                </a>Instagram: @MILF
+            </p>
+            <p>
+                <a href="http://www.twitter.com/milf">
+                <img src="#" alt="Logo Twitter">
+                </a>Facebook: MILF
+            </p>
+        </div> 
+    </div>
+        <div>
+            <p>Desarrollada por MILF Company &copy;.</p>
+        </div>
 </footer>
 </body>
 </html>
