@@ -26,6 +26,25 @@
     padding-right: 65px;
 }
 
+#menu{
+    display:inline;
+}
+footer{
+    background-color: #1E1E20;
+    background-position: 50% 80%;
+    background-size: 90%;
+	padding-top: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    height: 40%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    font-family: 'Raleway';
+    color: #BBC3C6;
+    position: relative;
+}
+
 footer h3{
 	text-align: center;
 	margin-bottom: 10%;
@@ -42,22 +61,6 @@ footer div div p{
 
 .lessmargin{
 	margin-bottom: 0%;
-}
-
-.footer{
-    background-color: #1E1E20;
-    background-position: 50% 80%;
-    background-size: 90%;
-	padding-top: 4%;
-    padding-left: 4%;
-    padding-right: 4%;
-    height: 40%;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    font-family: 'Raleway';
-    color: #BBC3C6;
-    position: fixed;
 }
 
 .columna{
