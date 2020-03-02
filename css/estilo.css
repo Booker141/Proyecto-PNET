@@ -2,52 +2,64 @@
     background-color: #FFFFFF;
 }
 
-.logo{
+#logo{
     background-color: #FFFFFF;
-    background-size: 20%;
-    float: left;
+    width: 20vw;
+	margin-left: 2%;
 }
 
 .header{
     background-color: #1E1E20;
     background-position: 20% 60%;
     background-size: 40%;
-    padding-top: 25px;
-    padding-right: 50px;
-    padding-left: 50px;
-    height: 50px;
+    padding-left: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-right: 3.5%;
     font-family: 'Raleway';
     color: #BBC3C6;
-    overflow: hidden;
+	vertical-align: middle;
+	margin-left: 1%;
 }
 
 .header a{
     display: inline;
-    padding-right: 65px;
+	padding-left: 3%;
+	padding-right: 0.5%;
+	color: #BBC3C6;
+	font-weight: bold;
+	vertical-align: middle;
+	font-size: 1.25vw;
 }
 
 #menu{
     display:inline;
 }
+
+section{
+	
+}
+
 footer{
     background-color: #1E1E20;
-    background-position: 50% 80%;
-    background-size: 90%;
 	padding-top: 4%;
     padding-left: 4%;
     padding-right: 4%;
-    height: 40%;
+	padding-bottom: 2%;
+    height: 20%;
     width: 100%;
-    bottom: 0;
     left: 0;
     font-family: 'Raleway';
+	font-size: 1vw;
     color: #BBC3C6;
     position: relative;
+	overflow: hidden;
 }
 
 footer h3{
 	text-align: center;
 	margin-bottom: 10%;
+	font-size: 2vw;
 }
 
 footer a{
@@ -74,6 +86,11 @@ footer div div p{
 }
 
 .rrss{
-	width: 15%;
-	height: 15%;
+	width: 12%;
+	height: 12%;
+}
+
+#redes{
+	text-align: center;
+	margin-bottom: 5%;
 }
