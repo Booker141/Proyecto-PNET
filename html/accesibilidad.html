@@ -2,30 +2,29 @@
 <html lang="es">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="keywords" content="musica, clasica">
-    <meta name="description" content="Página web sobre festivales de música clásica.">
+    <meta name="keywords" content="musica, clasica, festival">
+    <meta name="description" content="Página web sobre este festival de música clásica.">
     <meta name="author" content="Luis Miguel Carpio Gavira, Sergio García Navarro">
     <meta name="designer" content="Luis Miguel Carpio Gavira, Sergio García Navarro">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>MILF: Music & Instruments Lovers Festival</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway|Viga&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="../css/estilo.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="../css/estilo.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body class="pagina">
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="../media/Logo.png" alt="Logo de la página web"></a>
+        <div>
+            <a href="index.html"><img id="logo" src="../media/Logo.png" alt="Logo de la página web"></a>
+            <span class="header">
+                <a href="index.html">Inicio</a>
+                <a href="localizacion.html">Localización</a>
+                <a href="programa.html">Programa</a>
+                <a href="conciertos.html">Conciertos</a>
+                <a href="inscripcion.html">Inscripción</a>
+                <a href="contacto.html">Quiénes somos</a>
+            </span>
         </div>
-        <nav class="header">
-            <a href="index.html">Inicio</a>
-            <a href="localizacion.html">Localización</a>
-            <a href="programa.html">Programa</a>
-            <a href="conciertos.html">Conciertos</a>
-            <a href="inscripcion.html">Inscripción</a>
-            <a href="FAQ.html">FAQ</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
     </header>
 <section>
     <ul>
@@ -37,7 +36,15 @@
         <!--Escribir sobre la accesibilidad de la página web-->
     </article>
 </section>
-<footer class="footer">
+<footer>
+    <div class="columna">
+		<p class="lessmargin"><a href="index.html">Inicio</a></p>
+		<p class="lessmargin"><a href="localizacion.html">Localización</a></p>
+		<p class="lessmargin"><a href="programa.html">Programa</a></p>
+		<p class="lessmargin"><a href="conciertos.html">Conciertos</a></p>
+		<p class="lessmargin"><a href="inscripcion.html">Inscripción</a></p>
+		<p class="lessmargin"><a href="accesibilidad.html">Accesibilidad</a></p>
+    </div>
     <div class="columna">
         <h3>CONTÁCTANOS AQUÍ</h3>
             <p>Dirección: Calle piano 21, Jerez de la Frontera (Cádiz)</p>
@@ -45,41 +52,17 @@
             <p>Correo electrónico de contacto: <a href="mailto:milf@gmail.com">milf@gmail.com</a></p>
     </div>
     <div class="columna">
-		<ul>
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="localizacion.html">Localización</a></li>
-			<li><a href="programa.html">Programa</a></li>
-			<li><a href="conciertos.html">Conciertos</a></li>
-			<li><a href="inscripcion.html">Inscripción</a></li>
-			<li><a href="FAQ.html">FAQ</a></li>
-			<li><a href="#">Aviso Legal</a></li>
-			<li><a href="accesibilidad.html">Accesibilidad</a></li>
-		</ul>
-    </div>
-    <div class="columna">
         <h3>REDES SOCIALES</h3>
         <!-- Incluir en las redes sociales las imágenes de sus iconos-->
-        <div>
-		    <p>
-                <a href="http://www.twitter.com/milf">
-                <img src="#" alt="Logo Twitter">
-                </a>Twitter: @MILF
-            </p>
-            <p>
-                <a href="http://www.twitter.com/milf">
-                <img src="#" alt="Logo Twitter">
-                </a>Instagram: @MILF
-            </p>
-            <p>
-                <a href="http://www.twitter.com/milf">
-                <img src="#" alt="Logo Twitter">
-                </a>Facebook: MILF
-            </p>
-        </div> 
-    </div>
+        <nav id="redes">
+		    <a href="http://www.twitter.com/milf"><img class="rrss" src="../media/icons/Twitter.png" alt="Logo Twitter"></a>
+            <a href="http://www.instagram.com/milf"><img class="rrss" src="../media/icons/Instagram.png" alt="Logo Instagram"></a>
+            <a href="http://www.facebook.com/milf"><img class="rrss" src="../media/icons/Facebook.png" alt="Logo Facebook"></a>
+        </nav> 
         <div>
             <p>Desarrollada por MILF Company &copy;.</p>
         </div>
+	</div>
 </footer>
 </body>
 </html>
