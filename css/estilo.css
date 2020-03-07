@@ -12,20 +12,22 @@
     background-color: #1E1E20;
     background-position: 20% 60%;
     background-size: 40%;
-    padding-left: 1%;
+    padding-left: 3%;
 	padding-top: 1%;
 	padding-bottom: 1%;
-	padding-right: 3.5%;
+	padding-right: 2.5%;
     font-family: 'Raleway';
     color: #BBC3C6;
 	vertical-align: middle;
-	margin-left: 1%;
+	margin-left: 3%;
 }
 
 .header a{
     display: inline;
-	padding-left: 3%;
-	padding-right: 0.5%;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
 	color: #BBC3C6;
 	font-weight: bold;
 	vertical-align: middle;
@@ -34,6 +36,17 @@
 
 #menu{
     display:inline;
+}
+
+.dropdown-menu{
+	background-color: #1E1E20;
+	padding-left: 1%;
+	border-color: #BBC3C6;
+}
+
+.dropdown-item:hover{
+	background-color: #1E1E20;
+	color: #FFF;
 }
 
 #margenpiano{
