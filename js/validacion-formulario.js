@@ -1,5 +1,5 @@
 function validacion(){
-    
+
     /*
     <form id="formulario" onsubmit="return validacion()" action="#" method="post">
             <p>Para realizar la inscripción, introduzca sus datos en los siguientes campos:</p>
@@ -35,18 +35,22 @@ function validacion(){
     fecha = new Date(ano, mes, dia);
 
     if(!esAlfabetico(valor1)){
+        alert("El campo Nombre debe contener únicamente caracteres alfabéticos");
         return false;
     }
 
     if(!esAlfabetico(valor2)){
+        alert("El campo Apellidos debe contener únicamente caracteres alfabéticos");
         return false;
     }
 
     if(!esSeleccionado(indice)){
+        alert("Debes seleccionar al menos un tipo de inscripción");
         return false;
     }
 
     if(!validarFecha(fecha)){
+        alert("La fecha debe estar comprendida entre las fechas de la celebración del evento");
         return false;
     }
 
@@ -61,9 +65,13 @@ function validacion(){
 
 function esAlfabetico(nodeValue valor){
 
+    //Variable que contiene las posibles letras del alfabeto
+    var letras = /^[A-Za-z]+$/;
 
-
-
+    //Comprueba si el valor recibido concuerda
+    if(valor.value.match(letras)){
+        return true;
+    }
 }
 /**
  * Método esSeleccionado(long indice)
