@@ -33,13 +33,14 @@
         <h2>Inscripción</h2>
         <form id="formulario" onsubmit="return validacion()" action="#" method="post">
             <p>Para realizar la inscripción, introduzca sus datos en los siguientes campos:</p>
-            Nombre (*): <input required type="text" name="nombre" placeholder="Introduzca su nombre"><br>
-            Apellidos: <input type="text" name="apellidos" placeholder="Introduzca su apellido"><br>
-            Email (*): <input type="email" name="email" placeholder="Introduzca su e-mail"><br>
-            DNI: <input type="text" name="DNI" placeholder="Introduzca su DNI"><br>
-            Fecha de nacimiento: <input type="date" name="fecha_nac"><br>
-            <p>Seleccione el tipo de inscripción que desea realizar:</p>
-            <select name="tipo_inscripción">
+            Nombre (*): <input required type="text" id="Nombre" name="nombre" placeholder="Introduzca su nombre"><br>
+            Apellidos (*): <input required type="text" id="Apellidos" name="apellidos" placeholder="Introduzca su apellido"><br>
+            Email (*): <input required type="email" id="Email" name="email" placeholder="Introduzca su e-mail"><br>
+            DNI: <input type="text" name="DNI" id="DNI" placeholder="Introduzca su DNI"><br>
+            Código socio del festival: <input type="text" id="Socio" name="socio" placeholder="Introduzca su código de socio"><br>
+            Fecha de nacimiento: <input type="date" id="FechaNac" name="fecha_nac" placeholder="Introduzca su fecha de nacimiento"><br>
+            <p>Seleccione el tipo de inscripción que desea realizar (*):</p>
+            <select required id="Formulario" name="tipo_inscripción">
                 <option value="1">Inscripción lite: 40&euro;</option>
                 <option value="2">Inscripción medium: 60&euro;</option>
                 <option value="3">Inscripción deluxe: 70&euro;</option>

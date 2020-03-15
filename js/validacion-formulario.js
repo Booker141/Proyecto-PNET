@@ -1,28 +1,8 @@
 function validacion(){
 
-    /*
-    <form id="formulario" onsubmit="return validacion()" action="#" method="post">
-            <p>Para realizar la inscripción, introduzca sus datos en los siguientes campos:</p>
-            Nombre (*): <input required type="text" name="nombre" placeholder="Introduzca su nombre"><br>
-            Apellidos: <input type="text" name="apellidos" placeholder="Introduzca su apellido"><br>
-            Email (*): <input type="email" name="email" placeholder="Introduzca su e-mail"><br>
-            DNI: <input type="text" name="DNI" placeholder="Introduzca su DNI"><br>
-            Fecha de nacimiento: <input type="date" name="fecha_nac"><br>
-            <p>Seleccione el tipo de inscripción que desea realizar:</p>
-            <select name="tipo_inscripción">
-                <option value="1">Inscripción lite: 40&euro;</option>
-                <option value="2">Inscripción medium: 60&euro;</option>
-                <option value="3">Inscripción deluxe: 70&euro;</option>
-                <option value="4">Inscripción luxury: 100&euro;</option>
-            </select>
-            <button type="submit">Enviar</button>
-            <!-- Dos tipo fecha (salida y llegada) para realizar búsquedas?-->
-        </form>
-*/
-
     //Valores de los campos Nombre y Apellidos
-    valor1 = document.getElementById("Nombre").nodeValue;
-    valor2 = document.getElementById("Apellidos").nodeValue;
+    nombre = document.getElementById("Nombre").nodeValue;
+    apellidos = document.getElementById("Apellidos").nodeValue;
 
     //Valor del campo Email
 
@@ -32,45 +12,55 @@ function validacion(){
 
     dni = document.getElementById("DNI").nodeValue;
 
+    //Valor del campo Código de socio
+
+    socio = document.getElementById("Socio").nodeValue;
+
     //Opciones de la lista de inscripciones
-    indice = document.getElementById("formulario").selectIndex;
 
-    //Datos para validar fecha
-    var dia = document.getElementById("dia").nodeValue;
-    var mes = document.getElementById("mes").nodeValue;
-    var ano = document.getElementById("ano").nodeValue;
+    indice = document.getElementById("Formulario").selectIndex;
 
-    fecha = new Date(ano, mes, dia);
+    //Datos para validar fecha nacimiento
+   
+    fecha = document.getElementById("FechaNac").nodeValue;
 
-    if(!esAlfabetico(valor1)){
+    if(esAlfabetico(nombre)){
         alert("El campo Nombre debe contener únicamente caracteres alfabéticos");
         return false;
     }
 
-    if(!esAlfabetico(valor2)){
+    if(esAlfabetico(apellidos)){
         alert("El campo Apellidos debe contener únicamente caracteres alfabéticos");
         return false;
     }
 
-    if(!esEmail(email)){
+    if(esEmail(email)){
         alert("El formato de la dirección de correo electrónico es incorrecto");
         return false;
     }
 
-    if(!esDNI(dni)){
+    if(esDNI(dni)){
         alert("El formato del DNI es incorrecto");
         return false;
     }
 
-    if(!esSeleccionado(indice)){
+    if(esSocio(socio)){
+        alert("El formato del código de socio es incorrecto");
+        return false;
+    }
+
+    if(validarFechaNac(fecha)){
+        alert("La fecha debe estar comprendida entre las fechas de la celebración del evento");
+        return false;
+    }
+
+    if(esSeleccionado(indice)){
         alert("Debes seleccionar al menos un tipo de inscripción");
         return false;
     }
 
-    if(!validarFecha(fecha)){
-        alert("La fecha debe estar comprendida entre las fechas de la celebración del evento");
-        return false;
-    }
+
+    return true;
 
 }
 
@@ -87,8 +77,8 @@ function esAlfabetico(nodeValue valor){
     var letras = /^[A-Za-z]+$/;
 
     //Comprueba si el valor recibido concuerda
-    if(valor.value.match(letras)){
-        return true;
+    if(!(valor.value.match(letras))){
+        return false;
     }
 }
 /**
@@ -100,8 +90,8 @@ function esAlfabetico(nodeValue valor){
 
 function esEmail(nodeValue email){
 
-    if((/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(email)) ) {
-        return true;
+    if(!(/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(email))){
+        return false;
     }
     
 }
@@ -117,12 +107,12 @@ function esDNI(nodeValue dni){
 
     var letrasDNI = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
-    if( (/^\d{8}[A-Z]$/.dni(valor)) ) {
-        return true;
+    if( !(/^\d{8}[A-Z]$/.dni(valor)) ) {
+        return false;
     }
 
-    if(dni.charAt(8) == letrasDNI[(dni.substring(0, 8))%23]) {
-        return true;
+    if(!(dni.charAt(8) == letrasDNI[(dni.substring(0, 8))%23])) {
+        return false;
     }
 
 }
@@ -135,23 +125,35 @@ function esDNI(nodeValue dni){
  */
 function esSeleccionado(long indice){
 
-    if(indice!=-1){
-        return true;
+    if((indice == null || indice == 0)){
+        return false;
     }
 
 }
 
 /**
- * Método validarFecha()
- * 
+ * Método validarFecha(Date fecha)
+ *  @param {*} Date
+ *  @param {*} fecha 
  * Comprueba que las fechas están comprendidas entre las fechas de la celebración del evento
  */
 
-function validarFecha(Date fecha){
+function validarFechaNac(Date fecha){
 
-    if(isNaN(fecha)){
-        return true;
+    if(!(isNaN(fecha))){
+        return false;
     }
+
+}
+
+/**
+ * Método esSocio(nodeValue socio)
+ * @param {*} nodeValue 
+ * @param {*} socio 
+ * Comprueba que el formato del código del socio es correcto
+ */
+
+function esSocio(nodeValue socio){
 
 }
 
