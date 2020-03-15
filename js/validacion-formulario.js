@@ -24,6 +24,14 @@ function validacion(){
     valor1 = document.getElementById("Nombre").nodeValue;
     valor2 = document.getElementById("Apellidos").nodeValue;
 
+    //Valor del campo Email
+
+    email = document.getElementById("Email").nodeValue;
+
+    //Valor del campo DNI
+
+    dni = document.getElementById("DNI").nodeValue;
+
     //Opciones de la lista de inscripciones
     indice = document.getElementById("formulario").selectIndex;
 
@@ -41,6 +49,16 @@ function validacion(){
 
     if(!esAlfabetico(valor2)){
         alert("El campo Apellidos debe contener únicamente caracteres alfabéticos");
+        return false;
+    }
+
+    if(!esEmail(email)){
+        alert("El formato de la dirección de correo electrónico es incorrecto");
+        return false;
+    }
+
+    if(!esDNI(dni)){
+        alert("El formato del DNI es incorrecto");
         return false;
     }
 
@@ -74,6 +92,42 @@ function esAlfabetico(nodeValue valor){
     }
 }
 /**
+ * Método esEmail(nodeValue email)
+ * @param {*} nodeValue 
+ * @param {*} email
+ * Comprueba que el formato de la dirección de correo electrónico sea correcto 
+ */
+
+function esEmail(nodeValue email){
+
+    if((/\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)/.test(email)) ) {
+        return true;
+    }
+    
+}
+
+/**
+ * Método esDNI(nodeValue dni)
+ * @param {*} nodeValue 
+ * @param {*} dni 
+ * Comprueba que el formato del DNI sea correcto
+ */
+
+function esDNI(nodeValue dni){
+
+    var letrasDNI = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+    if( (/^\d{8}[A-Z]$/.dni(valor)) ) {
+        return true;
+    }
+
+    if(dni.charAt(8) == letrasDNI[(dni.substring(0, 8))%23]) {
+        return true;
+    }
+
+}
+
+/**
  * Método esSeleccionado(long indice)
  * @param {*} long 
  * @param {*} indice 
@@ -93,21 +147,11 @@ function esSeleccionado(long indice){
  * Comprueba que las fechas están comprendidas entre las fechas de la celebración del evento
  */
 
-function validarFecha(){
+function validarFecha(Date fecha){
 
-
-
-
-}
-
-/**
- * Método adicional()
- * 
- * Método relacionado con la temática del evento
- */
-
-function adicional(){
-
-
+    if(isNaN(fecha)){
+        return true;
+    }
 
 }
+
