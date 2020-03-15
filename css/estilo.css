@@ -47,14 +47,6 @@
 	color: #FFF;
 }
 
-#margenpiano{
-	background-image: url("../media/images/piano.jpg");
-	background-repeat: repeat-x;
-	width: 100%;
-	height: 3vw;
-	margin-bottom: 3%;
-}
-
 section h1{
 	text-align: center;
 	font-family: 'Viga';

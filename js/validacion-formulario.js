@@ -1,4 +1,5 @@
 function validacion(){
+    
     /*
     <form id="formulario" onsubmit="return validacion()" action="#" method="post">
             <p>Para realizar la inscripción, introduzca sus datos en los siguientes campos:</p>
@@ -18,6 +19,7 @@ function validacion(){
             <!-- Dos tipo fecha (salida y llegada) para realizar búsquedas?-->
         </form>
 */
+
     //Valores de los campos Nombre y Apellidos
     valor1 = document.getElementById("Nombre").nodeValue;
     valor2 = document.getElementById("Apellidos").nodeValue;
@@ -56,6 +58,7 @@ function validacion(){
  * @param {*} valor 
  * Comprueba que los campos que sean necesario solo contienen caracteres alfabéticos
  */
+
 function esAlfabetico(nodeValue valor){
 
 
@@ -81,6 +84,7 @@ function esSeleccionado(long indice){
  * 
  * Comprueba que las fechas están comprendidas entre las fechas de la celebración del evento
  */
+
 function validarFecha(){
 
 
@@ -93,6 +97,7 @@ function validarFecha(){
  * 
  * Método relacionado con la temática del evento
  */
+
 function adicional(){
 
 
