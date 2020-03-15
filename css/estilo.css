@@ -8,6 +8,10 @@
 	margin-left: 2%;
 }
 
+header{
+	margin-bottom: -2%;
+}
+
 .header{
     background-color: #1E1E20;
     background-position: 20% 60%;
@@ -39,7 +43,7 @@
 .dropdown-menu{
 	background-color: #1E1E20;
 	padding-left: 1%;
-	border-color: #BBC3C6;
+	border-radius: 0px;
 }
 
 .dropdown-item:hover{
@@ -47,28 +51,62 @@
 	color: #FFF;
 }
 
+.contenedor{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0%;
+}
+
+section{
+	margin: 4%;
+}
+
 section h1{
 	text-align: center;
 	font-family: 'Viga';
 	font-size: 3vw;
-	margin-bottom: 4%;
-	margin-top: 4%;
+	margin-bottom: 2%;
+	margin-top: 8%;
+}
+
+article{
+	margin-bottom: 5%;
 }
 
 article h2{
 	font-family: 'Viga';
 	font-size: 2.25vw;
-	margin-bottom: 3%;
-	margin-left: 4%;
-	margin-right: 4%;
 }
 
 article p{
 	font-family: 'Raleway';
 	text-align: justify;
 	font-size: 1.5vw;
-	margin-left: 4%;
-	margin-right: 4%;
+	margin-bottom: 2%;
+}
+
+table{
+	margin-bottom: 4%;
+	border-collapse: separate;
+	border-spacing: 10%;
+	width: 45%;
+}
+
+th{
+	font-family: 'Viga';
+	font-size: 1.75vw;
+	font-weight: bold;
+}
+
+td{
+	font-family: 'Raleway';
+	font-size: 1.5vw;
+}
+
+.programImg{
+	max-width: 45%;
+	height: auto;
 }
 
 footer{
@@ -119,6 +157,8 @@ footer div div p{
 .rrss{
 	width: 12%;
 	height: 12%;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
 }
 
 #redes{
