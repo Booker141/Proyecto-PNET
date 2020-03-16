@@ -12,9 +12,9 @@ function validacion(){
 
     dni = document.getElementById("DNI").nodeValue;
 
-    //Valor del campo Código de socio
+    //Valor respuesta a la pregunta
 
-    socio = document.getElementById("Socio").nodeValue;
+    respuesta = document.getElementById("Pregunta").nodeValue;
 
     //Opciones de la lista de inscripciones
 
@@ -44,8 +44,8 @@ function validacion(){
         return false;
     }
 
-    if(esSocio(socio)){
-        alert("El formato del código de socio es incorrecto");
+    if(esCorrecta(respuesta)){
+        alert("La respuesta no es correcta");
         return false;
     }
 
@@ -147,13 +147,17 @@ function validarFechaNac(Date fecha){
 }
 
 /**
- * Método esSocio(nodeValue socio)
+ * Método esCorrecta(nodeValue respuesta)
  * @param {*} nodeValue 
- * @param {*} socio 
- * Comprueba que el formato del código del socio es correcto
+ * @param {*} respuesta
+ * Comprueba que la respuesta a la pregunta es correcta
  */
 
-function esSocio(nodeValue socio){
+function esCorrecta(nodeValue respuesta){
+
+    if(!(respuesta == "Rossini" || respuesta == "rossini")){
+        return false;
+    }
 
 }
 
