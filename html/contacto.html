@@ -7,7 +7,7 @@
     <meta name="author" content="Luis Miguel Carpio Gavira, Sergio García Navarro">
     <meta name="designer" content="Luis Miguel Carpio Gavira, Sergio García Navarro">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>MILF: Music & Instruments Lovers Festival</title>
+    <title>MILF: Music & Instruments Lovers Festival / Quiénes somos</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -19,18 +19,34 @@
             <a href="index.html"><img id="logo" src="../media/Logo.png" alt="Logo de la página web" title="Logo de MILF"></a>
 			<span class="header">
 				<a href="index.html" title="A la página principal">Inicio</a>
-				<a href="localizacion.html" title="Lugar del evento">Localización</a>
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Localización del evento">Localización</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="Localización.html#Alojamiento">Alojamiento</a>
+					<a class="dropdown-item" href="Localización.html#Transporte">Transportes</a>
+					<a class="dropdown-item" href="Localización.html#Lugar">Lugar</a>
+				</div>
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Descripción del evento">Programa</a>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 					<a class="dropdown-item" href="programa.html#Itinerario">Itinerario</a>
 					<a class="dropdown-item" href="programa.html#Conciertos">Conciertos</a>
 					<a class="dropdown-item" href="programa.html#Conferencias">Conferencias</a>
-				</div>
+                </div>
 				<a href="inscripcion.html" title="Apuntarse al evento">Inscripción</a>
-				<a href="contacto.html" title="Contactar con MILF">Quiénes somos</a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Contacto">Quiénes somos</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="contacto.html#Introducción">Introducción</a>
+					<a class="dropdown-item" href="contacto.html#Contexto del evento">Contexto del evento</a>
+					<a class="dropdown-item" href="contacto.html#Formas de contacto">Formas de contacto</a>
+				</div>
 			</span>
 		</div>
     </header>
+    <nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Contacto</li>
+		</ol>
+	</nav>
 <section>
     <ul id="interno">
         <!--Redireccionar a artículos de la propia página-->
@@ -42,7 +58,7 @@
 </section>
 <section>
     <h1>Quiénes somos</h1>
-    <article class="Seccion1">
+    <article id="Introducción">
         <h2>Music and Instruments Lovers Festival, por un festival mejor</h2>
         <img src="../media/QuienesSomos.png" alt="Imagen de una orquesta">
         <p>Music and Instruments Lovers Festival se define por la difusión de la cultura y el compromiso social. 
@@ -57,7 +73,7 @@
             ¡El festival crea un espacio para el disfrute de la música clásica y el diálogo con artistas reconocidos a nivel internacional que no te podrás perder!            
         </p>
     </article>
-    <article class="Seccion2">
+    <article id="Contexto del evento">
         <h2>Heterofonía de voces y sonidos, tanto en lo musical en lo social</h2>
         <img src="../media/Contexto.png" alt="Imagen de una mujer tocando un violonchelo">
         <p>La música clásica ha transitado junto a la humanidad durante siglos desafiando al tiempo y al espacio, 
@@ -67,7 +83,7 @@
             Creemos firmemente en la importancia de la presencia que la música clásica tiene en el desarrollo social y cultural de nuestro entorno. 
             Hemos identificado la falta de nuevos y emocionantes espacios donde la afición por este arte puede ser cultivado.</p>
     </article>
-    <article class="Seccion3">
+    <article id="Formas de contacto">
         <h2>Formas de contacto</h2>
         <p>Podéis contactar con nosotros a través de la dirección de correo electrónico: mail@gmail.com o a través de nuestras redes sociales.
             <a href="http://www.twitter.com/milf"><img class="rrss" src="../media/icons/Twitter.png" alt="Logo Twitter">@MILF</a>

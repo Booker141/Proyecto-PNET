@@ -7,50 +7,56 @@
     <meta name="author" content="Luis Miguel Carpio Gavira, Sergio García Navarro">
     <meta name="designer" content="Luis Miguel Carpio Gavira, Sergio García Navarro">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>MILF: Music & Instruments Lovers Festival</title>
+	<title>MILF: Music & Instruments Lovers Festival / Inicio</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="../css/estilo.css" rel="stylesheet" type="text/css">
-    <link href="../css/seccionesIndex.css" rel="stylesheet" type="text/css">
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pagina">
-    <header>
+	<header>
         <div>
             <a href="index.html"><img id="logo" src="../media/Logo.png" alt="Logo de la página web" title="Logo de MILF"></a>
 			<span class="header">
 				<a href="index.html" title="A la página principal">Inicio</a>
-				<a href="localizacion.html" title="Lugar del evento">Localización</a>
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Localización del evento">Localización</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="Localización.html#Alojamiento">Alojamiento</a>
+					<a class="dropdown-item" href="Localización.html#Transporte">Transportes</a>
+					<a class="dropdown-item" href="Localización.html#Lugar">Lugar</a>
+				</div>
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Descripción del evento">Programa</a>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 					<a class="dropdown-item" href="programa.html#Itinerario">Itinerario</a>
 					<a class="dropdown-item" href="programa.html#Conciertos">Conciertos</a>
 					<a class="dropdown-item" href="programa.html#Conferencias">Conferencias</a>
-				</div>
+                </div>
 				<a href="inscripcion.html" title="Apuntarse al evento">Inscripción</a>
-				<a href="contacto.html" title="Contactar con MILF">Quiénes somos</a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Contacto">Quiénes somos</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="contacto.html#Introducción">Introducción</a>
+					<a class="dropdown-item" href="contacto.html#Contexto del evento">Contexto del evento</a>
+					<a class="dropdown-item" href="contacto.html#Formas de contacto">Formas de contacto</a>
+				</div>
 			</span>
 		</div>
     </header>
-	<section>
-		<h2>Secciones de la página</h2>
-		<ul id="interno">
-			<!--Redireccionar a artículos de la propia página-->
-			<li><a href="#Seccion1">Voces blancas y los caminos hacia Wagner</a></li>
-			<li><a href="#Seccion2">Anne Gastinel toca Txaikovsky</a></li>
-			<li><a href="#Seccion3">Alexander Melkinov aproxima la magia a la música</a></li>
-		</ul>
-	</section>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+		</ol>
+	</nav>
 	<section>
 		<h2>Noticias relacionadas</h2>
 		<!--Poner aquí tres noticias relacionadas-->
 		<aside class="BarraLateral">
 			<nav>
 				<ul>
-                   <li><a href="https://elpais.com/ccaa/2020/02/18/catalunya/1582051516_717664.html">Palau 100 apuesta por las nuevas estrellas de la dirección</a></li>
-                   <li><a href="https://elpais.com/cultura/2020/02/11/actualidad/1581443117_544087.html">Jakub Hrůša, crisol musical centroeuropeo</a></li>
-                   <li><a href="https://elpais.com/cultura/2020/01/18/actualidad/1579355482_195460.html">Un Bartók deslumbrante arropa el estreno de la ‘Quinta’ de Rueda</a></li>
-               </ul> 
+                    <li><a href="https://elpais.com/ccaa/2020/02/18/catalunya/1582051516_717664.html">Palau 100 apuesta por las nuevas estrellas de la dirección</a></li>
+                    <li><a href="https://elpais.com/cultura/2020/02/11/actualidad/1581443117_544087.html">Jakub Hrůša, crisol musical centroeuropeo</a></li>
+                    <li><a href="https://elpais.com/cultura/2020/01/18/actualidad/1579355482_195460.html">Un Bartók deslumbrante arropa el estreno de la ‘Quinta’ de Rueda</a></li>
+                </ul> 
 			</nav>
 		</aside>
 	</section>
@@ -58,27 +64,33 @@
 		<h1>En relación con el festival</h1>
 		<article class="Seccion1">
 			<!--Imagen a la izquierda, texto a la derecha-->
-			<img src="../media/Coro.png" alt="Coro cantando Wagner">
-			<h2>VOCES BLANCAS Y LOS CAMINOS HACIA WAGNER</h2>
-			<p>Esta temporada iniciamos "Las cámaras del Liceo" que tiene como objetivo acercarnos a la esencia de la música de Wagner, 
-            de la mano de miembros de la Orquesta y Coro del Gran Teatro del Liceu. El programa estará compuesto por obras de compositores 
-            que han influido en el artista así como sus contemporàneos y acabaremos con su música.</p>
+			<img class="Img" src="../media/Coro.png" alt="Coro cantando Wagner">
+			<div>
+				<h2>VOCES BLANCAS Y LOS CAMINOS HACIA WAGNER</h2>
+				<p>Esta temporada iniciamos "Las cámaras del Liceo" que tiene como objetivo acercarnos a la esencia de la música de Wagner, 
+           		de la mano de miembros de la Orquesta y Coro del Gran Teatro del Liceu. El programa estará compuesto por obras de compositores 
+				que han influido en el artista así como sus contemporàneos y acabaremos con su música.</p>
+			</div>
 		</article>
 		<article class="Seccion2">
 			<!--Imagen a la derecha, texto a la izquierda-->
-			<img src="../media/Gastinel.png" alt="Imagen de Anne Gastinel">
-			<h2>ANNE GASTINEL TOCA TXAIKOVSKY</h2>
-			<p>La OSV nos ofrecerá un concierto con la obra "Háry János" de Z. Kodály, 
-            y dos piezas de Tchaikovsky: las "Variaciones rococó para violonchelo y orquesta" y "la Obertura 1812".</p>
+			<div>
+				<h2>ANNE GASTINEL TOCA TXAIKOVSKY</h2>
+				<p>La OSV nos ofrecerá un concierto con la obra "Háry János" de Z. Kodály, 
+				y dos piezas de Tchaikovsky: las "Variaciones rococó para violonchelo y orquesta" y "la Obertura 1812".</p>
+			</div>
+				<img class="Img" src="../media/Gastinel.png" alt="Imagen de Anne Gastinel">
 		</article>
 		<article class="Seccion3">
 			<!--Imagen a la izquierda, texto a la derecha-->
-			<img src="../media/Melkinov.png" alt="Imagen de Alexander Melkinov">
-			<h2>ALEXANDER MELKINOV APROXIMA LA MAGIA A LA MÚSICA</h2>
-			<p>Alexander Melnikov nos aproxima a la música vanguardista europea de principios del siglo XX con 
-            la interpretación de los Preludios de Debussy. Se trata de una colección de doce perlas musicales en la que el compositor 
-            francés explora la inmensa la gama de cromatismos que le ofrecían las 88 teclas del piano. El resultado es un mágico, embriagador, 
-            intenso y fugaz universo sonoro. </p>
+			<img class="Img" src="../media/Melkinov.png" alt="Imagen de Alexander Melkinov">
+			<div>
+				<h2>ALEXANDER MELKINOV APROXIMA LA MAGIA A LA MÚSICA</h2>
+				<p>Alexander Melnikov nos aproxima a la música vanguardista europea de principios del siglo XX con 
+            	la interpretación de los Preludios de Debussy. Se trata de una colección de doce perlas musicales en la que el compositor 
+            	francés explora la inmensa la gama de cromatismos que le ofrecían las 88 teclas del piano. El resultado es un mágico, embriagador, 
+				intenso y fugaz universo sonoro. </p>
+			</div>
 		</article>
 	</section>
 	<footer>
