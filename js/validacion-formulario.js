@@ -33,9 +33,9 @@ function validacion(){
 	vuelta = document.getElementById("Vuelta").nodeValue;
 
     if(esAlfabetico(nombre)){
-        alert("El campo Nombre debe contener únicamente caracteres alfabéticos");
+        alert('El campo Nombre debe contener únicamente caracteres alfabéticos');
         return false;
-    }
+	}
 
     if(esAlfabetico(apellidos)){
         alert("El campo Apellidos debe contener únicamente caracteres alfabéticos");
