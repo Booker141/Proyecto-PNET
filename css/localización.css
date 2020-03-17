@@ -1,0 +1,34 @@
+
+.Alojamiento{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+.Transporte{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+.Lugar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+.Mapa{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+}
+
+.LocalizacionImg{
+	max-width: 45%;
+	height: auto;
+}
+

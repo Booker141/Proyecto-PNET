@@ -1,0 +1,27 @@
+
+.Seccion1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+.Seccion2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+.Seccion3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+.Img{
+	max-width: 45%;
+	height: auto;
+}
+

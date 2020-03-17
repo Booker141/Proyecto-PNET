@@ -7,11 +7,12 @@
     <meta name="author" content="Luis Miguel Carpio Gavira, Sergio García Navarro">
     <meta name="designer" content="Luis Miguel Carpio Gavira, Sergio García Navarro">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>MILF: Music & Instruments Lovers Festival</title>
+    <title>MILF: Music & Instruments Lovers Festival / Localización</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="../css/estilo.css" rel="stylesheet" type="text/css">
+    <link href="../css/localización.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pagina">
     <header>
@@ -19,15 +20,25 @@
             <a href="index.html"><img id="logo" src="../media/Logo.png" alt="Logo de la página web" title="Logo de MILF"></a>
 			<span class="header">
 				<a href="index.html" title="A la página principal">Inicio</a>
-				<a href="localizacion.html" title="Lugar del evento">Localización</a>
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Localización del evento">Localización</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="Localización.html#Alojamiento">Alojamiento</a>
+					<a class="dropdown-item" href="Localización.html#Transporte">Transportes</a>
+					<a class="dropdown-item" href="Localización.html#Lugar">Lugar</a>
+				</div>
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Descripción del evento">Programa</a>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 					<a class="dropdown-item" href="programa.html#Itinerario">Itinerario</a>
 					<a class="dropdown-item" href="programa.html#Conciertos">Conciertos</a>
 					<a class="dropdown-item" href="programa.html#Conferencias">Conferencias</a>
-				</div>
+                </div>
 				<a href="inscripcion.html" title="Apuntarse al evento">Inscripción</a>
-				<a href="contacto.html" title="Contactar con MILF">Quiénes somos</a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Contacto">Quiénes somos</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="contacto.html#Introducción">Introducción</a>
+					<a class="dropdown-item" href="contacto.html#Contexto del evento">Contexto del evento</a>
+					<a class="dropdown-item" href="contacto.html#Formas de contacto">Formas de contacto</a>
+				</div>
 			</span>
 		</div>
     </header>
@@ -38,41 +49,32 @@
 		</ol>
 	</nav>
 <section>
-    <h2>Secciones de la página</h2>
-    <ul id="interno">
-        <!--Redireccionar a artículos de la propia página-->
-        <li><a href="#Alojamiento">Alojamiento</a></li>
-        <li><a href="#Transporte">Medios de transporte</a></li>
-        <li><a href="#Lugar">Lugar de celebración</a></li>
-    </ul>
-</section>
-<section>
     <h1>Localización</h1>
 <!--Alojamiento, transporte, lugar de celebración, enlaces a páginas webs relacionadas, mapa de Google-->
     <article class="Alojamiento">
+        <img class="LocalizacionImg" src="../media/Itaca.png" alt="Imagen del hotel Ítaca">
         <h2>ALOJAMIENTO</h2>
-        <img src="../media/Itaca.png" alt="Imagen del hotel Ítaca">
         <p> El hotel Ítaca, con 4 estrellas y situado cerca del Teatro Villamarta, te envuelve en un ambiente tranquilo y 
             elegante ideal para relajarte en tus vacaciones. Disfruta de confortables y luminosas habitaciones con vistas al centro urbano. Saborea nuestro restaurante a la carta. 
             Prueba el completo desayuno buffet que se sirve en la hermosa capilla reformada del convento. Y por supuesto vive Jerez.</p>
     </article>
     <article class="Transporte">
         <h2>MEDIOS DE TRANSPORTE</h2>
-        <img src="../media/Consorcio.png" alt="Imagen de un autobús del Consorcio de Transportes Bahía de Cádiz">
         <p>Gracias al servicio de transporte que nos ofrece el Consorcio de Transportes de la Bahía de Cádiz
             podemos asegurar su comodidad y puntualidad al evento si se aloja lejos del Teatro. Sin embargo, si decidió alojarse en el 
             hotel Ítaca, el Teatro Villamarta está a cinco minutos a pie.
         </p>
+        <img class="LocalizacionImg" src="../media/Consorcio.png" alt="Imagen de un autobús del Consorcio de Transportes Bahía de Cádiz">
     </article>
     <article class="Lugar">
+        <img class="LocalizacionImg" src="../media/Villamarta.png" alt="Imagen del Teatro Villamarta">
         <h2>LUGAR DE CELEBRACIÓN</h2>
-        <img src="../media/Villamarta.png" alt="Imagen del Teatro Villamarta">
         <p>El Teatro Villamarta es un espacio ideal donde alojar nuestros eventos. Con capacidad para 1.226 espectadores entre el patio de butacas y los dos pisos, el Teatro Villamarta de Jerez de la Frontera es uno de los teatros de referencia de Cádiz.
             Inaugurado en 1926, es obra del arquitecto Teodoro Anasagasti y está ubicado en el antiguo Convento de Veracruz. Tras su cierre en 1984, 
             fue comprado dos años más tarde por el Ayuntamiento de la localidad gaditana y reinagurado en 1996. Es la sede principal del Festival de Jerez de flamenco.</p>
-        <!--Mapa web de google-->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1599.8461182337617!2d-6.134922989212888!3d36.68190014429662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xd0dc6931f901b39%3A0xbea1a08a5ae3e6d7!2sHotel%20%C3%8Dtaca%20Jerez%2C%20Calle%20Diego%20Fern%C3%A1ndez%20Herrera%2C%20Jerez%20de%20la%20Frontera!3m2!1d36.6810176!2d-6.1327387!4m5!1s0xd0dc693f2c178eb%3A0xaad939094c46cfc0!2sTeatro%20Villamarta%2C%20Plaza%20Romero%20Mart%C3%ADnez%2C%20Jerez%20de%20la%20Frontera!3m2!1d36.6828979!2d-6.135256399999999!5e0!3m2!1ses!2ses!4v1582998068220!5m2!1ses!2ses"></iframe>
     </article>
+    <!--Mapa web de google-->
+    <iframe class="Mapa" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1599.8461182337617!2d-6.134922989212888!3d36.68190014429662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xd0dc6931f901b39%3A0xbea1a08a5ae3e6d7!2sHotel%20%C3%8Dtaca%20Jerez%2C%20Calle%20Diego%20Fern%C3%A1ndez%20Herrera%2C%20Jerez%20de%20la%20Frontera!3m2!1d36.6810176!2d-6.1327387!4m5!1s0xd0dc693f2c178eb%3A0xaad939094c46cfc0!2sTeatro%20Villamarta%2C%20Plaza%20Romero%20Mart%C3%ADnez%2C%20Jerez%20de%20la%20Frontera!3m2!1d36.6828979!2d-6.135256399999999!5e0!3m2!1ses!2ses!4v1582998068220!5m2!1ses!2ses"></iframe>
     <article>
         <h2>ENLACES A PÁGINAS WEB RELACIONADAS</h2>
         <nav>
