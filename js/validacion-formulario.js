@@ -18,11 +18,19 @@ function validacion(){
 
     //Opciones de la lista de inscripciones
 
-    indice = document.getElementById("Formulario").selectIndex;
+    indice = document.getElementById("Inscripcion").selectIndex;
 
     //Datos para validar fecha nacimiento
    
     fecha = document.getElementById("FechaNac").nodeValue;
+	
+	//Fecha de salida
+	
+	salida = document.getElementById("Salida").nodeValue;
+	
+	//Fecha de regreso
+	
+	vuelta = document.getElementById("Vuelta").nodeValue;
 
     if(esAlfabetico(nombre)){
         alert("El campo Nombre debe contener únicamente caracteres alfabéticos");
