@@ -58,6 +58,23 @@ header{
 	padding: 0%;
 }
 
+.breadcrumb{
+	background-color: #FFF;
+	margin-left: 3%;
+	margin-right: 8%;
+	margin-top: 2%;
+	margin-bottom: -5%;
+}
+
+.breadcrumb-item{
+	font-family: 'Viga';
+	font-size: 1.5vw;
+}
+
+.breadcrumb-item a{
+	color: #962715;
+}
+
 section{
 	margin: 4%;
 }
@@ -71,7 +88,7 @@ section h1{
 }
 
 article{
-	margin-bottom: 5%;
+	margin-bottom: 7%;
 }
 
 article h2{
@@ -88,25 +105,32 @@ article p{
 
 table{
 	margin-bottom: 4%;
-	border-collapse: separate;
+	border-collapse: collapse;
 	border-spacing: 10%;
 	width: 45%;
+	border: 1px solid black;
 }
 
 th{
 	font-family: 'Viga';
 	font-size: 1.75vw;
 	font-weight: bold;
+	border: 1px solid black;
 }
 
 td{
 	font-family: 'Raleway';
 	font-size: 1.5vw;
+	border: 1px solid black;
 }
 
 .programImg{
 	max-width: 45%;
 	height: auto;
+}
+
+.aladerecha{
+	text-align: right;
 }
 
 footer{
