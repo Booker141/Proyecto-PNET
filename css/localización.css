@@ -1,19 +1,18 @@
-
-.Alojamiento{
+#Alojamiento{
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0%;
 }
 
-.Transporte{
+#Transporte{
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0%;
 }
 
-.Lugar{
+#Lugar{
     width: 100%;
     display: flex;
     justify-content: space-between;
