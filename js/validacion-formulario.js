@@ -143,6 +143,12 @@ function esDNI(dni){
 	return true;
 }
 
+/**
+ * Método nacimientoOK(fecha)
+ * @param {*} fecha 
+ * Comprueba que la fecha de nacimiento es correcta (al menos 6 años)
+ */
+
 function nacimientoOK(fecha){
 	var maximo = new Date(2015, 1, 1);
 	if(fecha > maximo) return false;
@@ -155,6 +161,7 @@ function nacimientoOK(fecha){
  * @param {*} indice 
  * Comprueba que haya una opción seleccionada de la lista
  */
+
 function esSeleccionado(indice){
     if(indice != 0 && indice != 1 && indice != 2 && indice != 3){
         return false;
