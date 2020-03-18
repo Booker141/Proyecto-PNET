@@ -11,10 +11,6 @@ function validacion(){
     //Valor del campo DNI
 
     dni = document.getElementById("DNI").value;
-	
-	//Identificador de socio
-	
-	socio = document.getElementById("Socio").value;
 
     //Valor respuesta a la pregunta
 
@@ -22,7 +18,7 @@ function validacion(){
 
     //Opciones de la lista de inscripciones
 
-    indice = document.getElementById("Inscripcion").selectIndex;
+    indice = document.getElementById("Inscripcion").value;
 
     //Datos para validar fecha nacimiento
    
@@ -56,19 +52,13 @@ function validacion(){
         validado = false;
     }
 
-    if(!esDNI(dni)){
+    if(dni != "" && !esDNI(dni)){
         alert("El formato del DNI es incorrecto (11111111A).");
 		document.getElementById("DNI").style.border="1px solid red";
         validado = false;
     }
 	
-	if(!esSocio(socio)){
-		alert("El identificador de socio proporcionado no es correcto (11111A).");
-		document.getElementById("Socio").style.border="1px solid red";
-		validado = false;
-	}
-	
-	if(!nacimientoOK(fecha)){
+	if(!nacimientoOK(fecha) || fecha == null || fecha == ""){
 		alert("Debe tener como mínimo 6 años para asistir.");
 		document.getElementById("FechaNac").style.border="1px solid red";
 		validado = false;
@@ -88,7 +78,6 @@ function validacion(){
 	
 	if(salida != "2020-06-26" && salida != "2020-06-27"){
 		alert("Se ha introducido una fecha de salida que está fuera del evento.");
-		alert(salida);
 		document.getElementById("Salida").style.border="1px solid red";
 		validado = false;
 	}
@@ -154,12 +143,6 @@ function esDNI(dni){
 	return true;
 }
 
-function esSocio(socio){
-	var regexp = /^[0-9]{5,5}[A-Z]+$/;
-	if(!regexp.test(socio)) return false;
-	else return true;
-}
-
 function nacimientoOK(fecha){
 	var maximo = new Date(2015, 1, 1);
 	if(fecha > maximo) return false;
@@ -173,7 +156,7 @@ function nacimientoOK(fecha){
  * Comprueba que haya una opción seleccionada de la lista
  */
 function esSeleccionado(indice){
-    if((indice == null || indice == 0)){
+    if(indice != 0 && indice != 1 && indice != 2 && indice != 3){
         return false;
     } else return true;
 }

@@ -61,18 +61,16 @@
 				<input required type="email" id="Email" name="email" placeholder="Introduzca su e-mail"><br>
 				<label>DNI:</label>
 				<input type="text" name="DNI" id="DNI" minlength="7" maxlength="11" placeholder="Introduzca su DNI"><br>
-				<label>Código socio del festival:</label>
-				<input type="text" id="Socio" name="socio" placeholder="Introduzca su código de socio"><br>
 				<label>Fecha de nacimiento (*):</label>
 				<input type="date" id="FechaNac" name="fecha_nac" placeholder="Introduzca su fecha de nacimiento" min="1900-01-01" max="2014-12-31"><br>
 				<label>¿Quién compuso óperas tan conocidas como "El barbero de Sevilla" o "Guillermo Tell"? (*):</label>
 				<input type="text" id="Pregunta" name="pregunta" placeholder="Introduzca su respuesta"><br>
 				<label>Seleccione el tipo de inscripción que desea realizar (*):</label>
 				<select required id="Inscripcion" name="tipo_inscripción">
-					<option value="1">Inscripción lite: 40&euro;</option>
-					<option value="2">Inscripción medium: 60&euro;</option>
-					<option value="3">Inscripción deluxe: 70&euro;</option>
-					<option value="4">Inscripción luxury: 100&euro;</option>
+					<option value="0" selected>Inscripción lite: 40&euro;</option>
+					<option value="1">Inscripción medium: 60&euro;</option>
+					<option value="2">Inscripción deluxe: 70&euro;</option>
+					<option value="3">Inscripción luxury: 100&euro;</option>
 				</select><br>
 				<label>Fecha de salida (*):</label>
 				<input type="date" id="Salida" name="salida" placeholder="Primer día que estará en el evento" min="2020-06-26" max="2020-06-27"><br>
