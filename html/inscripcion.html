@@ -14,99 +14,103 @@
     <link href="../css/estilo.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pagina">
-    <header>
-        <div>
-            <a href="index.html"><img id="logo" src="../media/Logo.png" alt="Logo de la página web" title="Logo de MILF"></a>
-			<span class="header">
-				<a href="index.html" title="A la página principal">Inicio</a>
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Localización del evento">Localización</a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					<a class="dropdown-item" href="Localización.html#Alojamiento">Alojamiento</a>
-					<a class="dropdown-item" href="Localización.html#Transporte">Transportes</a>
-					<a class="dropdown-item" href="Localización.html#Lugar">Lugar</a>
+    <div id="cuerpo">
+		<div id="contenido">
+			<header>
+				<div>
+					<a href="index.html"><img id="logo" src="../media/Logo.png" alt="Logo de la página web" title="Logo de MILF"></a>
+					<span class="header">
+						<a href="index.html" title="A la página principal">Inicio</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Localización del evento">Localización</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="Localización.html#Alojamiento">Alojamiento</a>
+							<a class="dropdown-item" href="Localización.html#Transporte">Transportes</a>
+							<a class="dropdown-item" href="Localización.html#Lugar">Lugar</a>
+						</div>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink2" title="Descripción del evento">Programa</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+							<a class="dropdown-item" href="programa.html#Itinerario">Itinerario</a>
+							<a class="dropdown-item" href="programa.html#Conciertos">Conciertos</a>
+							<a class="dropdown-item" href="programa.html#Conferencias">Conferencias</a>
+						</div>
+						<a href="inscripcion.html" title="Apuntarse al evento">Inscripción</a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink3" title="Contacto">Quiénes somos</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+							<a class="dropdown-item" href="contacto.html#Introducción">Introducción</a>
+							<a class="dropdown-item" href="contacto.html#Contexto del evento">Contexto del evento</a>
+							<a class="dropdown-item" href="contacto.html#Formas de contacto">Formas de contacto</a>
+						</div>
+					</span>
 				</div>
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink2" title="Descripción del evento">Programa</a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-					<a class="dropdown-item" href="programa.html#Itinerario">Itinerario</a>
-					<a class="dropdown-item" href="programa.html#Conciertos">Conciertos</a>
-					<a class="dropdown-item" href="programa.html#Conferencias">Conferencias</a>
-                </div>
-				<a href="inscripcion.html" title="Apuntarse al evento">Inscripción</a>
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink3" title="Contacto">Quiénes somos</a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
-					<a class="dropdown-item" href="contacto.html#Introducción">Introducción</a>
-					<a class="dropdown-item" href="contacto.html#Contexto del evento">Contexto del evento</a>
-					<a class="dropdown-item" href="contacto.html#Formas de contacto">Formas de contacto</a>
-				</div>
-			</span>
+			</header>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Inscripción</li>
+				</ol>
+			</nav>
+			<section>
+				<h1>Formulario</h1>
+				<article id="inscripción">
+					<h2>Inscripción</h2>
+					<form id="formulario" onsubmit="return validacion();" action="#" method="post">
+						<p>Para realizar la inscripción, introduzca sus datos en los siguientes campos:</p>
+						<label>Nombre (*):</label>
+						<input required type="text" id="Nombre" name="nombre" placeholder="Introduzca su nombre"><br>
+						<label>Apellidos (*):</label>
+						<input required type="text" id="Apellidos" name="apellidos" placeholder="Introduzca su apellido"><br>
+						<label>Email (*):</label>
+						<input required type="email" id="Email" name="email" placeholder="Introduzca su e-mail"><br>
+						<label>DNI:</label>
+						<input type="text" name="DNI" id="DNI" minlength="7" maxlength="11" placeholder="Introduzca su DNI"><br>
+						<label>Fecha de nacimiento (*):</label>
+						<input type="date" id="FechaNac" name="fecha_nac" placeholder="Introduzca su fecha de nacimiento" min="1900-01-01" max="2014-12-31"><br>
+						<label>¿Quién compuso óperas tan conocidas como "El barbero de Sevilla" o "Guillermo Tell"? (*):</label>
+						<input type="text" id="Pregunta" name="pregunta" placeholder="Introduzca su respuesta"><br>
+						<label>Seleccione el tipo de inscripción que desea realizar (*):</label>
+						<select required id="Inscripcion" name="tipo_inscripción">
+							<option value="0" selected>Inscripción lite: 40&euro;</option>
+							<option value="1">Inscripción medium: 60&euro;</option>
+							<option value="2">Inscripción deluxe: 70&euro;</option>
+							<option value="3">Inscripción luxury: 100&euro;</option>
+						</select><br>
+						<label>Fecha de salida (*):</label>
+						<input type="date" id="Salida" name="salida" placeholder="Primer día que estará en el evento" min="2020-06-26" max="2020-06-27"><br>
+						<label>Fecha de regreso (*):</label>
+						<input type="date" id="Vuelta" name="vuelta" placeholder="Último día que estará en el evento" min="2020-06-26" max="2020-06-27"><br>
+						<span id="centeredbutton"><!--<button type="submit" onclick="validacion()">Enviar</button>--><input type="submit" value="Enviar" name="enviar"></span>
+					</form>
+				</article>
+			</section>
 		</div>
-    </header>
-    <nav aria-label="breadcrumb">
-		<ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Inscripción</li>
-		</ol>
-	</nav>
-	<section>
-		<h1>Formulario</h1>
-		<article id="inscripción">
-			<h2>Inscripción</h2>
-			<form id="formulario" onsubmit="return validacion();" action="#" method="post">
-				<p>Para realizar la inscripción, introduzca sus datos en los siguientes campos:</p>
-				<label>Nombre (*):</label>
-				<input required type="text" id="Nombre" name="nombre" placeholder="Introduzca su nombre"><br>
-				<label>Apellidos (*):</label>
-				<input required type="text" id="Apellidos" name="apellidos" placeholder="Introduzca su apellido"><br>
-				<label>Email (*):</label>
-				<input required type="email" id="Email" name="email" placeholder="Introduzca su e-mail"><br>
-				<label>DNI:</label>
-				<input type="text" name="DNI" id="DNI" minlength="7" maxlength="11" placeholder="Introduzca su DNI"><br>
-				<label>Fecha de nacimiento (*):</label>
-				<input type="date" id="FechaNac" name="fecha_nac" placeholder="Introduzca su fecha de nacimiento" min="1900-01-01" max="2014-12-31"><br>
-				<label>¿Quién compuso óperas tan conocidas como "El barbero de Sevilla" o "Guillermo Tell"? (*):</label>
-				<input type="text" id="Pregunta" name="pregunta" placeholder="Introduzca su respuesta"><br>
-				<label>Seleccione el tipo de inscripción que desea realizar (*):</label>
-				<select required id="Inscripcion" name="tipo_inscripción">
-					<option value="0" selected>Inscripción lite: 40&euro;</option>
-					<option value="1">Inscripción medium: 60&euro;</option>
-					<option value="2">Inscripción deluxe: 70&euro;</option>
-					<option value="3">Inscripción luxury: 100&euro;</option>
-				</select><br>
-				<label>Fecha de salida (*):</label>
-				<input type="date" id="Salida" name="salida" placeholder="Primer día que estará en el evento" min="2020-06-26" max="2020-06-27"><br>
-				<label>Fecha de regreso (*):</label>
-				<input type="date" id="Vuelta" name="vuelta" placeholder="Último día que estará en el evento" min="2020-06-26" max="2020-06-27"><br>
-				<span id="centeredbutton"><!--<button type="submit" onclick="validacion()">Enviar</button>--><input type="submit" value="Enviar" name="enviar"></span>
-			</form>
-		</article>
-	</section>
-	<footer>
-		<div class="columna">
-			<p class="lessmargin"><a href="index.html">Inicio</a></p>
-			<p class="lessmargin"><a href="localizacion.html">Localización</a></p>
-			<p class="lessmargin"><a href="programa.html">Programa</a></p>
-			<p class="lessmargin"><a href="inscripcion.html">Inscripción</a></p>
-			<p class="lessmargin"><a href="contacto.html">Quiénes somos</a></p>
-		</div>
-		<div class="columna">
-			<h3>CONTÁCTANOS AQUÍ</h3>
-				<p>Dirección: Calle piano 21, Jerez de la Frontera (Cádiz)</p>
-				<p>Número de teléfono: 956032167</p>
-				<p>Correo electrónico de contacto: <a href="mailto:milf@gmail.com">milf@gmail.com</a></p>
-		</div>
-		<div class="columna">
-			<h3>REDES SOCIALES</h3>
-			<!-- Incluir en las redes sociales las imágenes de sus iconos-->
-			<nav id="redes">
-				<a href="http://www.twitter.com/milf"><img class="rrss" src="../media/icons/Twitter.png" alt="Logo Twitter"></a>
-				<a href="http://www.instagram.com/milf"><img class="rrss" src="../media/icons/Instagram.png" alt="Logo Instagram"></a>
-				<a href="http://www.facebook.com/milf"><img class="rrss" src="../media/icons/Facebook.png" alt="Logo Facebook"></a>
-			</nav> 
-			<div>
-				<p>Desarrollada por MILF Company &copy;.</p>
+		<footer id="footer">
+			<div class="columna">
+				<p class="lessmargin"><a href="index.html">Inicio</a></p>
+				<p class="lessmargin"><a href="localizacion.html">Localización</a></p>
+				<p class="lessmargin"><a href="programa.html">Programa</a></p>
+				<p class="lessmargin"><a href="inscripcion.html">Inscripción</a></p>
+				<p class="lessmargin"><a href="contacto.html">Quiénes somos</a></p>
 			</div>
-		</div>
-	</footer>
+			<div class="columna">
+				<h3>CONTÁCTANOS AQUÍ</h3>
+					<p>Dirección: Calle piano 21, Jerez de la Frontera (Cádiz)</p>
+					<p>Número de teléfono: 956032167</p>
+					<p>Correo electrónico de contacto: <a href="mailto:milf@gmail.com">milf@gmail.com</a></p>
+			</div>
+			<div class="columna">
+				<h3>REDES SOCIALES</h3>
+				<!-- Incluir en las redes sociales las imágenes de sus iconos-->
+				<nav id="redes">
+					<a href="http://www.twitter.com/milf"><img class="rrss" src="../media/icons/Twitter.png" alt="Logo Twitter"></a>
+					<a href="http://www.instagram.com/milf"><img class="rrss" src="../media/icons/Instagram.png" alt="Logo Instagram"></a>
+					<a href="http://www.facebook.com/milf"><img class="rrss" src="../media/icons/Facebook.png" alt="Logo Facebook"></a>
+				</nav> 
+				<div>
+					<p>Desarrollada por MILF Company &copy;.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
 	<script src="../js/validacion-formulario.js" type="text/javascript"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

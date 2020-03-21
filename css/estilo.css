@@ -1,5 +1,23 @@
 .pagina {
     background-color: #FFFFFF;
+	height: 100%;
+}
+
+#cuerpo{
+	position: relative;
+	min-height: 100vh;
+}
+
+#contenido{
+	padding-bottom: 2.5rem;
+}
+
+#footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
+	background-color: #1E1E20;
 }
 
 #logo{
@@ -161,14 +179,12 @@ footer{
     padding-left: 4%;
     padding-right: 4%;
 	padding-bottom: 2%;
-    height: 20%;
     width: 100%;
     left: 0;
+	bottom: 0;
     font-family: 'Raleway';
 	font-size: 1vw;
     color: #BBC3C6;
-    position: relative;
-	overflow: hidden;
 }
 
 footer h3{
