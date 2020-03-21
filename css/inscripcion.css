@@ -1,0 +1,21 @@
+label{
+	font-family: 'Raleway';
+	font-size: 1.5vw;
+	font-weight: bold;
+}
+
+input{
+	font-size: 1.5vw;
+}
+
+select{
+	font-size: 1.5vw;
+}
+
+#centeredbutton{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 4%;
+	font-size: 1.5vw;
+}

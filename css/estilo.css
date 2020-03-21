@@ -46,7 +46,7 @@ header{
 .header a{
     display: inline;
 	margin-left: 1%;
-	margin-right: 1%;
+	margin-right: 0.5%;
 	padding-left: 2.9%;
 	padding-right: 2.9%;
 	color: #BBC3C6;
@@ -149,28 +149,6 @@ td{
 
 .aladerecha{
 	text-align: right;
-}
-
-label{
-	font-family: 'Raleway';
-	font-size: 1.5vw;
-	font-weight: bold;
-}
-
-input{
-	font-size: 1.5vw;
-}
-
-select{
-	font-size: 1.5vw;
-}
-
-#centeredbutton{
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	margin-top: 4%;
-	font-size: 1.5vw;
 }
 
 footer{
