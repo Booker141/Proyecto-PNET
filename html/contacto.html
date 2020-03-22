@@ -15,113 +15,123 @@
     <link href="../css/formatoArticulos.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pagina">
-    <header>
-        <div>
-            <a href="index.html"><img id="logo" src="../media/Logo.png" alt="Logo de la página web" title="Logo de MILF"></a>
-			<span class="header">
-				<a href="index.html" title="A la página principal">Inicio</a>
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Localización del evento">Localización</a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-					<a class="dropdown-item" href="Localización.html#Alojamiento">Alojamiento</a>
-					<a class="dropdown-item" href="Localización.html#Transporte">Transportes</a>
-					<a class="dropdown-item" href="Localización.html#Lugar">Lugar</a>
+    <div id="cuerpo">
+		<div id="contenido">
+			<header>
+				<div>
+					<a href="index.html"><img id="logo" src="../media/Logo.png" alt="Logo de la página web" title="Logo de MILF"></a>
+					<span class="header">
+						<a href="index.html" title="A la página principal">Inicio</a>
+						<span class="dropdown"> <!-- Localización -->
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Localización del evento">Localización</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								<a class="dropdown-item" href="Localización.html#Alojamiento">Alojamiento</a>
+								<a class="dropdown-item" href="Localización.html#Transporte">Transportes</a>
+								<a class="dropdown-item" href="Localización.html#Lugar">Lugar</a>
+							</div>
+						</span>
+						<span class="dropdown"> <!-- Programa -->
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink2" title="Descripción del evento">Programa</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+								<a class="dropdown-item" href="programa.html#Itinerario">Itinerario</a>
+								<a class="dropdown-item" href="programa.html#Conciertos">Conciertos</a>
+								<a class="dropdown-item" href="programa.html#Conferencias">Conferencias</a>
+							</div>
+						</span>
+						<a href="inscripcion.html" title="Apuntarse al evento">Inscripción</a>
+						<span class="dropdown"> <!-- Quiénes somos -->
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink3" title="Contacto">Quiénes somos</a>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+								<a class="dropdown-item" href="contacto.html#Introduccion">Introducción</a>
+								<a class="dropdown-item" href="contacto.html#Contexto">Contexto del evento</a>
+								<a class="dropdown-item" href="contacto.html#Formas">Formas de contacto</a>
+							</div>
+						</span>
+					</span>
 				</div>
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink2" title="Descripción del evento">Programa</a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuLinkw">
-					<a class="dropdown-item" href="programa.html#Itinerario">Itinerario</a>
-					<a class="dropdown-item" href="programa.html#Conciertos">Conciertos</a>
-					<a class="dropdown-item" href="programa.html#Conferencias">Conferencias</a>
-                </div>
-				<a href="inscripcion.html" title="Apuntarse al evento">Inscripción</a>
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink3" title="Contacto">Quiénes somos</a>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
-					<a class="dropdown-item" href="contacto.html#Introducción">Introducción</a>
-					<a class="dropdown-item" href="contacto.html#Contexto del evento">Contexto del evento</a>
-					<a class="dropdown-item" href="contacto.html#Formas de contacto">Formas de contacto</a>
-				</div>
-			</span>
+			</header>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Quiénes somos</li>
+				</ol>
+			</nav>
+			<section>
+				<h2>Secciones de la página</h2>
+				<ul id="interno">
+					<!--Redireccionar a artículos de la propia página-->
+					<li><a href="#Introduccion">Por un festival mejor</a></li>
+					<li><a href="#Contexto">Contexto de la música clásica</a></li>
+					<li><a href="#Formas">Formas de contacto</a></li>
+				</ul>
+			</section>
+			<section>
+				<h1>Quiénes somos</h1>
+				<article id="Introduccion">
+					<h2>Music and Instruments Lovers Festival, por un festival mejor</h2>
+					<img src="../media/QuienesSomos.png" alt="Imagen de una orquesta">
+					<p>Music and Instruments Lovers Festival se define por la difusión de la cultura y el compromiso social. 
+						Asistir a festivales de música clásica es el hobbie que ha unido al joven equipo de MILF. Si algo
+						está claro a día de hoy es que los festivales son los nuevos conciertos. Ese cambio de tendencia
+						va asociado a las nuevas generaciones, que prefieren disfrutar de más artistas en un período más largo
+						de tiempo y muchas veces al mismo precio que tendría un concierto de una estrella de rock.
+						Esa nueva forma de consumo, unida a la afición que tiene el equipo de MILF por asistir a este tipo de eventos fueron
+						las claves que motivaron la creación de un proyecto que es diferente a otros portales online que tratan sobre festivales
+						de música clásica.
+						Nuestra programación incluye conciertos y conferencias de grandes artistas de la música clásica. 
+						¡El festival crea un espacio para el disfrute de la música clásica y el diálogo con artistas reconocidos a nivel internacional que no te podrás perder!            
+					</p>
+				</article>
+				<article id="Contexto">
+					<h2>Heterofonía de voces y sonidos, tanto en lo musical en lo social</h2>
+					<img src="../media/Contexto.png" alt="Imagen de una mujer tocando un violonchelo">
+					<p>La música clásica ha transitado junto a la humanidad durante siglos desafiando al tiempo y al espacio, 
+						viajando a través del mundo, compartiendo emociones y percepciones sin importar los límites culturales que nos separan. 
+						El contacto con esta expresión sonora materializa los sentimientos de tal manera que se puede reflexionar sobre ellos, más allá de las palabras. 
+						La música comunica, teje, revela, cuestiona y crea sentidos de mundo desde el afecto.
+						Creemos firmemente en la importancia de la presencia que la música clásica tiene en el desarrollo social y cultural de nuestro entorno. 
+						Hemos identificado la falta de nuevos y emocionantes espacios donde la afición por este arte puede ser cultivado.</p>
+				</article>
+				<article id="Formas">
+					<h2>Formas de contacto</h2>
+					<p>Podéis contactar con nosotros a través de la dirección de correo electrónico: mail@gmail.com o a través de nuestras redes sociales.
+						<a href="http://www.twitter.com/milf"><img class="rrss" src="../media/icons/Twitter.png" alt="Logo Twitter">@MILF</a>
+						<a href="http://www.instagram.com/milf"><img class="rrss" src="../media/icons/Instagram.png" alt="Logo Instagram">@MILFestival</a>
+						<a href="http://www.facebook.com/milf"><img class="rrss" src="../media/icons/Facebook.png" alt="Logo Facebook">MILF: Music and Instruments Lovers Festival</a>
+					</p>
+				</article>
+			</section>
 		</div>
-    </header>
-    <nav aria-label="breadcrumb">
-		<ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-			<li class="breadcrumb-item active" aria-current="page">Contacto</li>
-		</ol>
-	</nav>
-<section>
-    <ul id="interno">
-        <!--Redireccionar a artículos de la propia página-->
-        <h2>Secciones de la página</h2>
-        <li><a href="#Seccion1">Por un festival mejor</a></li>
-        <li><a href="#Seccion2">Contexto de la música clásica</a></li>
-        <li><a href="#Seccion3">Formas de contacto</a></li>
-    </ul>
-</section>
-<section>
-    <h1>Quiénes somos</h1>
-    <article id="Introducción">
-        <h2>Music and Instruments Lovers Festival, por un festival mejor</h2>
-        <img src="../media/QuienesSomos.png" alt="Imagen de una orquesta">
-        <p>Music and Instruments Lovers Festival se define por la difusión de la cultura y el compromiso social. 
-            Asistir a festivales de música clásica es el hobbie que ha unido al joven equipo de MILF. Si algo
-            está claro a día de hoy es que los festivales son los nuevos conciertos. Ese cambio de tendencia
-            va asociado a las nuevas generaciones, que prefieren disfrutar de más artistas en un período más largo
-            de tiempo y muchas veces al mismo precio que tendría un concierto de una estrella de rock.
-            Esa nueva forma de consumo, unida a la afición que tiene el equipo de MILF por asistir a este tipo de eventos fueron
-            las claves que motivaron la creación de un proyecto que es diferente a otros portales online que tratan sobre festivales
-            de música clásica.
-            Nuestra programación incluye conciertos y conferencias de grandes artistas de la música clásica. 
-            ¡El festival crea un espacio para el disfrute de la música clásica y el diálogo con artistas reconocidos a nivel internacional que no te podrás perder!            
-        </p>
-    </article>
-    <article id="Contexto del evento">
-        <h2>Heterofonía de voces y sonidos, tanto en lo musical en lo social</h2>
-        <img src="../media/Contexto.png" alt="Imagen de una mujer tocando un violonchelo">
-        <p>La música clásica ha transitado junto a la humanidad durante siglos desafiando al tiempo y al espacio, 
-            viajando a través del mundo, compartiendo emociones y percepciones sin importar los límites culturales que nos separan. 
-            El contacto con esta expresión sonora materializa los sentimientos de tal manera que se puede reflexionar sobre ellos, más allá de las palabras. 
-            La música comunica, teje, revela, cuestiona y crea sentidos de mundo desde el afecto.
-            Creemos firmemente en la importancia de la presencia que la música clásica tiene en el desarrollo social y cultural de nuestro entorno. 
-            Hemos identificado la falta de nuevos y emocionantes espacios donde la afición por este arte puede ser cultivado.</p>
-    </article>
-    <article id="Formas de contacto">
-        <h2>Formas de contacto</h2>
-        <p>Podéis contactar con nosotros a través de la dirección de correo electrónico: mail@gmail.com o a través de nuestras redes sociales.
-            <a href="http://www.twitter.com/milf"><img class="rrss" src="../media/icons/Twitter.png" alt="Logo Twitter">@MILF</a>
-            <a href="http://www.instagram.com/milf"><img class="rrss" src="../media/icons/Instagram.png" alt="Logo Instagram">@MILFestival</a>
-            <a href="http://www.facebook.com/milf"><img class="rrss" src="../media/icons/Facebook.png" alt="Logo Facebook">MILF: Music and Instruments Lovers Festival</a>
-        </p>
-    </article>
-</section>
-<footer>
-    <div class="columna">
-		<p class="lessmargin"><a href="index.html">Inicio</a></p>
-		<p class="lessmargin"><a href="localizacion.html">Localización</a></p>
-		<p class="lessmargin"><a href="programa.html">Programa</a></p>
-        <p class="lessmargin"><a href="inscripcion.html">Inscripción</a></p>
-        <p class="lessmargin"><a href="contacto.html">Quiénes somos</a></p>
-    </div>
-    <div class="columna">
-        <h3>CONTÁCTANOS AQUÍ</h3>
-            <p>Dirección: Calle piano 21, Jerez de la Frontera (Cádiz)</p>
-            <p>Número de teléfono: 956032167</p>
-            <p>Correo electrónico de contacto: <a href="mailto:milf@gmail.com">milf@gmail.com</a></p>
-    </div>
-    <div class="columna">
-        <h3>REDES SOCIALES</h3>
-        <!-- Incluir en las redes sociales las imágenes de sus iconos-->
-        <nav id="redes">
-		    <a href="http://www.twitter.com/milf"><img class="rrss" src="../media/icons/Twitter.png" alt="Logo Twitter"></a>
-            <a href="http://www.instagram.com/milf"><img class="rrss" src="../media/icons/Instagram.png" alt="Logo Instagram"></a>
-            <a href="http://www.facebook.com/milf"><img class="rrss" src="../media/icons/Facebook.png" alt="Logo Facebook"></a>
-        </nav> 
-        <div>
-            <p>Desarrollada por MILF Company &copy;.</p>
-        </div>
+		<footer>
+			<div class="columna">
+				<p class="lessmargin"><a href="index.html">Inicio</a></p>
+				<p class="lessmargin"><a href="localizacion.html">Localización</a></p>
+				<p class="lessmargin"><a href="programa.html">Programa</a></p>
+				<p class="lessmargin"><a href="inscripcion.html">Inscripción</a></p>
+				<p class="lessmargin"><a href="contacto.html">Quiénes somos</a></p>
+			</div>
+			<div class="columna">
+				<h3>CONTÁCTANOS AQUÍ</h3>
+					<p>Dirección: Calle piano 21, Jerez de la Frontera (Cádiz)</p>
+					<p>Número de teléfono: 956032167</p>
+					<p>Correo electrónico de contacto: <a href="mailto:milf@gmail.com">milf@gmail.com</a></p>
+			</div>
+			<div class="columna">
+				<h3>REDES SOCIALES</h3>
+				<!-- Incluir en las redes sociales las imágenes de sus iconos-->
+				<nav id="redes">
+					<a href="http://www.twitter.com/milf"><img class="rrss" src="../media/icons/Twitter.png" alt="Logo Twitter"></a>
+					<a href="http://www.instagram.com/milf"><img class="rrss" src="../media/icons/Instagram.png" alt="Logo Instagram"></a>
+					<a href="http://www.facebook.com/milf"><img class="rrss" src="../media/icons/Facebook.png" alt="Logo Facebook"></a>
+				</nav> 
+				<div>
+					<p>Desarrollada por MILF Company &copy;.</p>
+				</div>
+			</div>
+		</footer>
 	</div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
