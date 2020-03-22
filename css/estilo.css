@@ -109,6 +109,7 @@
 
 	article{
 		margin-bottom: 7%;
+		margin-top: 5%;
 	}
 
 	article h2{
@@ -243,7 +244,44 @@
 		justify-content: center;
 	}
 	
-	aside ul{
+	#quienessomos_1{
+		max-width: 40%;
+		height: auto;
+		margin-right: 3%;
+	}
+	
+	#quienessomos_2{
+		max-width: 60%;
+		height: auto;
+		margin-right: 3%;
+	}
+	
+	.infocontacto{
+		margin-top: 3%;
+		display: flex;
 		
+	}
+	
+	.aladerecha{
+		justify-content: right;
+	}
+	
+	#quienessomos_formas{
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.quienessomos_rrss{
+		color: #962715;
+		font-family: 'Raleway';
+		font-size: 1.6vw;
+	}
+	
+	.quienessomos_rrss:hover{
+		color: #BBC3C6;
+	}
+	
+	.quienessomos_rrss_img{
+		width: 6vw;
 	}
 }
