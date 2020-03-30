@@ -9,5 +9,15 @@
 .LocalizacionImg{
 	max-width: 45%;
 	height: auto;
+	margin-right: 3%;
 }
 
+.LocalizacionImgDcha{
+	max-width: 45%;
+	height: auto;
+	margin-left: 3%;
+}
+
+li a{
+	color: #962715;
+}
