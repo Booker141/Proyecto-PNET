@@ -12,122 +12,118 @@
 	<link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="../css/estilo.css" rel="stylesheet" type="text/css">
-    <link href="../css/formatoArticulos.css" rel="stylesheet" type="text/css">
     <link href="../css/localizacion.css" rel="stylesheet" type="text/css">
 </head>
-<body class="pagina">
+<body>
     <header>
+		<a href="index.html"><img id="logo" src="../media/images/Logo.png" alt="Logo de la página web" title="Logo de MILF"></a>
+		<span id="menuppal">
+			<a href="index.html" title="A la página principal">Inicio</a>
+			<span class="dropdown"> <!-- Localización -->
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Localización del evento">Localización</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="localizacion.html#Alojamiento">Alojamiento</a>
+					<a class="dropdown-item" href="localizacion.html#Transporte">Transportes</a>
+					<a class="dropdown-item" href="localizacion.html#Lugar">Lugar</a>
+				</div>
+			</span>
+			<span class="dropdown"> <!-- Programa -->
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink2" title="Descripción del evento">Programa</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+					<a class="dropdown-item" href="programa.html#Itinerario">Itinerario</a>
+					<a class="dropdown-item" href="programa.html#Conciertos">Conciertos</a>
+					<a class="dropdown-item" href="programa.html#Conferencias">Conferencias</a>
+				</div>
+			</span>
+			<a href="inscripcion.html" title="Apuntarse al evento">Inscripción</a>
+			<span class="dropdown"> <!-- Quiénes somos -->
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink3" title="Contacto">Quiénes somos</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+					<a class="dropdown-item" href="contacto.html#Introduccion">Introducción</a>
+					<a class="dropdown-item" href="contacto.html#Contexto">Contexto del evento</a>
+					<a class="dropdown-item" href="contacto.html#Formas">Formas de contacto</a>
+				</div>
+			</span>
+		</span>
+	</header>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Localización</li>
+		</ol>
+	</nav>
+	<section>
+		<h1>Localización</h1>
+		<article id="Alojamiento" class="flex">
+			<img class="imagenIzquierda" src="../media/images/Itaca.png" alt="Imagen del hotel Ítaca">
 			<div>
-				<a href="index.html"><img id="logo" src="../media/Logo.png" alt="Logo de la página web" title="Logo de MILF"></a>
-				<span class="header">
-					<a href="index.html" title="A la página principal">Inicio</a>
-					<span class="dropdown"> <!-- Localización -->
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Localización del evento">Localización</a>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-							<a class="dropdown-item" href="localizacion.html#Alojamiento">Alojamiento</a>
-							<a class="dropdown-item" href="localizacion.html#Transporte">Transportes</a>
-							<a class="dropdown-item" href="localizacion.html#Lugar">Lugar</a>
-						</div>
-					</span>
-					<span class="dropdown"> <!-- Programa -->
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink2" title="Descripción del evento">Programa</a>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-							<a class="dropdown-item" href="programa.html#Itinerario">Itinerario</a>
-							<a class="dropdown-item" href="programa.html#Conciertos">Conciertos</a>
-							<a class="dropdown-item" href="programa.html#Conferencias">Conferencias</a>
-						</div>
-					</span>
-					<a href="inscripcion.html" title="Apuntarse al evento">Inscripción</a>
-					<span class="dropdown"> <!-- Quiénes somos -->
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink3" title="Contacto">Quiénes somos</a>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
-							<a class="dropdown-item" href="contacto.html#Introduccion">Introducción</a>
-							<a class="dropdown-item" href="contacto.html#Contexto">Contexto del evento</a>
-							<a class="dropdown-item" href="contacto.html#Formas">Formas de contacto</a>
-						</div>
-					</span>
-				</span>
+				<h2>ALOJAMIENTO</h2>
+				<p> El hotel Ítaca, con 4 estrellas y situado cerca del Teatro Villamarta, te envuelve en un ambiente tranquilo y 
+				elegante ideal para relajarte en tus vacaciones. Disfruta de confortables y luminosas habitaciones con vistas al centro urbano. Saborea nuestro restaurante a la carta. 
+				Prueba el completo desayuno buffet que se sirve en la hermosa capilla reformada del convento. Y por supuesto vive Jerez.</p>
 			</div>
-		</header>
-		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Localización</li>
-			</ol>
-		</nav>
-<section>
-    <h1>Localización</h1>
-<!--Alojamiento, transporte, lugar de celebración, enlaces a páginas webs relacionadas, mapa de Google-->
-    <article id="Alojamiento" class="Formato">
-        <img class="LocalizacionImg" src="../media/Itaca.png" alt="Imagen del hotel Ítaca">
-        <div>
-            <h2>ALOJAMIENTO</h2>
-            <p> El hotel Ítaca, con 4 estrellas y situado cerca del Teatro Villamarta, te envuelve en un ambiente tranquilo y 
-            elegante ideal para relajarte en tus vacaciones. Disfruta de confortables y luminosas habitaciones con vistas al centro urbano. Saborea nuestro restaurante a la carta. 
-            Prueba el completo desayuno buffet que se sirve en la hermosa capilla reformada del convento. Y por supuesto vive Jerez.</p>
-        </div>
-    </article>
-    <article id="Transporte" class="Formato">
-        <div>
-            <h2>MEDIOS DE TRANSPORTE</h2>
-            <p>Gracias al servicio de transporte que nos ofrece el Consorcio de Transportes de la Bahía de Cádiz
-            podemos asegurar su comodidad y puntualidad al evento si se aloja lejos del Teatro. Sin embargo, si decidió alojarse en el 
-            hotel Ítaca, el Teatro Villamarta está a cinco minutos a pie.
-        </p>
-        </div>
-        <img class="LocalizacionImgDcha" src="../media/Consorcio.png" alt="Imagen de un autobús del Consorcio de Transportes Bahía de Cádiz">
-    </article>
-    <article id="Lugar" class="Formato">
-        <img class="LocalizacionImg" src="../media/Villamarta.png" alt="Imagen del Teatro Villamarta">
-        <div>
-            <h2>LUGAR DE CELEBRACIÓN</h2>
-            <p>El Teatro Villamarta es un espacio ideal donde alojar nuestros eventos. Con capacidad para 1.226 espectadores entre el patio de butacas y los dos pisos, el Teatro Villamarta de Jerez de la Frontera es uno de los teatros de referencia de Cádiz.
-            Inaugurado en 1926, es obra del arquitecto Teodoro Anasagasti y está ubicado en el antiguo Convento de Veracruz. Tras su cierre en 1984, 
-            fue comprado dos años más tarde por el Ayuntamiento de la localidad gaditana y reinagurado en 1996. Es la sede principal del Festival de Jerez de flamenco.</p>
-        </div>
-    </article>
-    <!--Mapa web de google-->
-    <iframe class="Mapa" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1599.8461182337617!2d-6.134922989212888!3d36.68190014429662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xd0dc6931f901b39%3A0xbea1a08a5ae3e6d7!2sHotel%20%C3%8Dtaca%20Jerez%2C%20Calle%20Diego%20Fern%C3%A1ndez%20Herrera%2C%20Jerez%20de%20la%20Frontera!3m2!1d36.6810176!2d-6.1327387!4m5!1s0xd0dc693f2c178eb%3A0xaad939094c46cfc0!2sTeatro%20Villamarta%2C%20Plaza%20Romero%20Mart%C3%ADnez%2C%20Jerez%20de%20la%20Frontera!3m2!1d36.6828979!2d-6.135256399999999!5e0!3m2!1ses!2ses!4v1582998068220!5m2!1ses!2ses"></iframe>
-    <article>
-        <h2>ENLACES A PÁGINAS WEB RELACIONADAS</h2>
-        <nav>
-            <ul>
-                <li><a href="https://www.itchoteles.com/hotel-itaca-jerez-en-jerez/?gclid=Cj0KCQiAtOjyBRC0ARIsAIpJyGMpbJxUdyzkuFEN_3Q8EA3ovq_DFjBGc2ik7TAtBHSuGy6tG_PpMmcaAuBKEALw_wcB">Hotel Ítaca</a></li>
-                <li><a href="http://www.cmtbc.es/">Consorcio de Transportes Bahía de Cádiz</a></li>
-                <li><a href="https://www.guiadelocio.com/cadiz/conciertos/jerez-de-la-frontera/teatro-villamarta3">Teatro Villamarta</a></li>
-            </ul>
-        </nav>
-    </article>
-</section>
-<footer>
-    <div class="columna">
-		<p class="lessmargin"><a href="index.html">Inicio</a></p>
-		<p class="lessmargin"><a href="localizacion.html">Localización</a></p>
-		<p class="lessmargin"><a href="programa.html">Programa</a></p>
-        <p class="lessmargin"><a href="inscripcion.html">Inscripción</a></p>
-        <p class="lessmargin"><a href="contacto.html">Quiénes somos</a></p>
-    </div>
-    <div class="columna">
-        <h3>CONTÁCTANOS AQUÍ</h3>
-            <p>Dirección: Calle piano 21, Jerez de la Frontera (Cádiz)</p>
-            <p>Número de teléfono: 956032167</p>
-            <p>Correo electrónico de contacto: <a href="mailto:milf@gmail.com">milf@gmail.com</a></p>
-    </div>
-    <div class="columna">
-        <h3>REDES SOCIALES</h3>
-        <!-- Incluir en las redes sociales las imágenes de sus iconos-->
-        <nav id="redes">
-		    <a href="http://www.twitter.com/milf"><img class="rrss" src="../media/icons/Twitter.png" alt="Logo Twitter"></a>
-            <a href="http://www.instagram.com/milf"><img class="rrss" src="../media/icons/Instagram.png" alt="Logo Instagram"></a>
-            <a href="http://www.facebook.com/milf"><img class="rrss" src="../media/icons/Facebook.png" alt="Logo Facebook"></a>
-        </nav> 
-        <div>
-            <p>Desarrollada por MILF Company &copy;.</p>
-        </div>
-	</div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		</article>
+		<article id="Transporte" class="flex">
+			<div>
+				<h2>MEDIOS DE TRANSPORTE</h2>
+				<p>Gracias al servicio de transporte que nos ofrece el Consorcio de Transportes de la Bahía de Cádiz
+				podemos asegurar su comodidad y puntualidad al evento si se aloja lejos del Teatro. Sin embargo, si decidió alojarse en el 
+				hotel Ítaca, el Teatro Villamarta está a cinco minutos a pie.
+			</p>
+			</div>
+			<img class="imagenDerecha" src="../media/images/Consorcio.png" alt="Imagen de un autobús del Consorcio de Transportes Bahía de Cádiz">
+		</article>
+		<article id="Lugar" class="flex">
+			<img class="imagenIzquierda" src="../media/images/Villamarta.png" alt="Imagen del Teatro Villamarta">
+			<div>
+				<h2>LUGAR DE CELEBRACIÓN</h2>
+				<p>El Teatro Villamarta es un espacio ideal donde alojar nuestros eventos. Con capacidad para 1.226 espectadores entre el patio de butacas y los dos pisos, el Teatro Villamarta de Jerez de la Frontera es uno de los teatros de referencia de Cádiz.
+				Inaugurado en 1926, es obra del arquitecto Teodoro Anasagasti y está ubicado en el antiguo Convento de Veracruz. Tras su cierre en 1984, 
+				fue comprado dos años más tarde por el Ayuntamiento de la localidad gaditana y reinagurado en 1996. Es la sede principal del Festival de Jerez de flamenco.</p>
+			</div>
+		</article>
+		<!--Mapa web de google-->
+		<iframe class="Mapa" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1599.8461182337617!2d-6.134922989212888!3d36.68190014429662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xd0dc6931f901b39%3A0xbea1a08a5ae3e6d7!2sHotel%20%C3%8Dtaca%20Jerez%2C%20Calle%20Diego%20Fern%C3%A1ndez%20Herrera%2C%20Jerez%20de%20la%20Frontera!3m2!1d36.6810176!2d-6.1327387!4m5!1s0xd0dc693f2c178eb%3A0xaad939094c46cfc0!2sTeatro%20Villamarta%2C%20Plaza%20Romero%20Mart%C3%ADnez%2C%20Jerez%20de%20la%20Frontera!3m2!1d36.6828979!2d-6.135256399999999!5e0!3m2!1ses!2ses!4v1582998068220!5m2!1ses!2ses"></iframe>
+		<article>
+			<h2>ENLACES A PÁGINAS WEB RELACIONADAS</h2>
+			<nav>
+				<ul>
+					<li><a href="https://www.itchoteles.com/hotel-itaca-jerez-en-jerez/?gclid=Cj0KCQiAtOjyBRC0ARIsAIpJyGMpbJxUdyzkuFEN_3Q8EA3ovq_DFjBGc2ik7TAtBHSuGy6tG_PpMmcaAuBKEALw_wcB">Hotel Ítaca</a></li>
+					<li><a href="http://www.cmtbc.es/">Consorcio de Transportes Bahía de Cádiz</a></li>
+					<li><a href="https://www.guiadelocio.com/cadiz/conciertos/jerez-de-la-frontera/teatro-villamarta3">Teatro Villamarta</a></li>
+				</ul>
+			</nav>
+		</article>
+	</section>
+	<footer>
+		<div class="columna">
+			<p class="lessmargin"><a href="index.html">Inicio</a></p>
+			<p class="lessmargin"><a href="localizacion.html">Localización</a></p>
+			<p class="lessmargin"><a href="programa.html">Programa</a></p>
+			<p class="lessmargin"><a href="inscripcion.html">Inscripción</a></p>
+			<p class="lessmargin"><a href="contacto.html">Quiénes somos</a></p>
+		</div>
+		<div class="columna">
+			<h3>CONTÁCTANOS AQUÍ</h3>
+				<p>Dirección: Calle piano 21, Jerez de la Frontera (Cádiz)</p>
+				<p>Número de teléfono: 956032167</p>
+				<p>Correo electrónico de contacto: <a href="mailto:milf@gmail.com">milf@gmail.com</a></p>
+		</div>
+		<div class="columna">
+			<h3>REDES SOCIALES</h3>
+			<!-- Incluir en las redes sociales las imágenes de sus iconos-->
+			<nav id="redes">
+				<a href="http://www.twitter.com/milf"><img class="rrss" src="../media/icons/Twitter.png" alt="Logo Twitter"></a>
+				<a href="http://www.instagram.com/milf"><img class="rrss" src="../media/icons/Instagram.png" alt="Logo Instagram"></a>
+				<a href="http://www.facebook.com/milf"><img class="rrss" src="../media/icons/Facebook.png" alt="Logo Facebook"></a>
+			</nav> 
+			<div>
+				<p>Desarrollada por MILF Company &copy;.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

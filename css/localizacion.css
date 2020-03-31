@@ -1,23 +1,12 @@
+@media (min-width: 200px) {
+	.Mapa{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 0%;
+	}
 
-.Mapa{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 0%;
-}
-
-.LocalizacionImg{
-	max-width: 45%;
-	height: auto;
-	margin-right: 3%;
-}
-
-.LocalizacionImgDcha{
-	max-width: 45%;
-	height: auto;
-	margin-left: 3%;
-}
-
-li a{
-	color: #962715;
+	li a{
+		color: #962715;
+	}
 }

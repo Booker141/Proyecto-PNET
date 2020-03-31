@@ -1,0 +1,36 @@
+@media (min-width: 200px) {
+	#quienessomos_1{	/*Tamaños personalizados para cada imagen, para aportar dinamismo a la página*/
+		max-width: 40%;
+		height: auto;
+		margin-right: 3%;
+	}
+	
+	#quienessomos_2{
+		max-width: 60%;
+		height: auto;
+		margin-right: 3%;
+	}
+	
+	.imagen-texto{	/*Bloque de imagen acompañando a texto*/
+		margin-top: 3%;
+		display: flex;
+	}
+	
+	.text-right{	/*Justificar a la derecha*/
+		text-align: right;
+	}
+	
+	.quienessomos_rrss{	/*Enlaces a las redes sociales*/
+		color: #962715;
+		font-family: 'Raleway';
+		font-size: 1.6vw;
+	}
+	
+	.quienessomos_rrss:hover{
+		color: #BBC3C6;
+	}
+	
+	.quienessomos_rrss_img{	/*Logos de las redes sociales*/
+		width: 6vw;
+	}
+}

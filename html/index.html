@@ -13,49 +13,46 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="../css/estilo.css" rel="stylesheet" type="text/css">
 	<link href="../css/index.css" rel="stylesheet" type="text/css">
-	<link href="../css/formatoArticulos.css" rel="stylesheet" type="text/css">
 </head>
-<body class="pagina">
+<body>
 	<header>
-		<div>
-			<a href="index.html"><img id="logo" src="../media/Logo.png" alt="Logo de la página web" title="Logo de MILF"></a>
-			<span class="header">
-				<a href="index.html" title="A la página principal">Inicio</a>
-				<span class="dropdown"> <!-- Localización -->
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Localización del evento">Localización</a>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-						<a class="dropdown-item" href="localizacion.html#Alojamiento">Alojamiento</a>
-						<a class="dropdown-item" href="localizacion.html#Transporte">Transportes</a>
-						<a class="dropdown-item" href="localizacion.html#Lugar">Lugar</a>
-					</div>
-				</span>
-				<span class="dropdown"> <!-- Programa -->
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink2" title="Descripción del evento">Programa</a>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-						<a class="dropdown-item" href="programa.html#Itinerario">Itinerario</a>
-						<a class="dropdown-item" href="programa.html#Conciertos">Conciertos</a>
-						<a class="dropdown-item" href="programa.html#Conferencias">Conferencias</a>
-					</div>
-				</span>
-				<a href="inscripcion.html" title="Apuntarse al evento">Inscripción</a>
-				<span class="dropdown"> <!-- Quiénes somos -->
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink3" title="Contacto">Quiénes somos</a>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
-						<a class="dropdown-item" href="contacto.html#Introduccion">Introducción</a>
-						<a class="dropdown-item" href="contacto.html#Contexto">Contexto del evento</a>
-						<a class="dropdown-item" href="contacto.html#Formas">Formas de contacto</a>
-					</div>
-				</span>
+		<a href="index.html"><img id="logo" src="../media/images/Logo.png" alt="Logo de la página web" title="Logo de MILF"></a>
+		<span id="menuppal">
+			<a href="index.html" title="A la página principal">Inicio</a>
+			<span class="dropdown"> <!-- Localización -->
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink" title="Localización del evento">Localización</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					<a class="dropdown-item" href="localizacion.html#Alojamiento">Alojamiento</a>
+					<a class="dropdown-item" href="localizacion.html#Transporte">Transportes</a>
+					<a class="dropdown-item" href="localizacion.html#Lugar">Lugar</a>
+				</div>
 			</span>
-		</div>
+			<span class="dropdown"> <!-- Programa -->
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink2" title="Descripción del evento">Programa</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+					<a class="dropdown-item" href="programa.html#Itinerario">Itinerario</a>
+					<a class="dropdown-item" href="programa.html#Conciertos">Conciertos</a>
+					<a class="dropdown-item" href="programa.html#Conferencias">Conferencias</a>
+				</div>
+			</span>
+			<a href="inscripcion.html" title="Apuntarse al evento">Inscripción</a>
+			<span class="dropdown"> <!-- Quiénes somos -->
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" aria-haspopup="true" role="button" id="dropdownMenuLink3" title="Contacto">Quiénes somos</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+					<a class="dropdown-item" href="contacto.html#Introduccion">Introducción</a>
+					<a class="dropdown-item" href="contacto.html#Contexto">Contexto del evento</a>
+					<a class="dropdown-item" href="contacto.html#Formas">Formas de contacto</a>
+				</div>
+			</span>
+		</span>
 	</header>
 	<nav aria-label="breadcrumb">
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
 		</ol>
 	</nav>
-	<div id="doscolumnas">
-		<aside id="flex-aside">
+	<div class="flex">
+		<aside>
 			<h1>Noticias relacionadas</h1>
 			<nav>
 				<ul>
@@ -68,9 +65,9 @@
 				</ul> 
 			</nav>
 		</aside>
-		<section id="flex-content">
+		<section id="co_aside">
 			<h1>En relación con el festival</h1>
-			<article class="Formato">
+			<article class="flex">
 				<img class="imagenIzquierda" src="../media/images/Noticia1.jpg" alt="La cantaora Marina Heredia y el director Pablo Heras-Casado con la Mahler Chamber Orchestra (Zaragoza)" title="La cantaora Marina Heredia y el director Pablo Heras-Casado con la Mahler Chamber Orchestra (Zaragoza)">
 				<div>
 					<h2>Manuel de Falla, moderno y universal</h2>
@@ -79,7 +76,7 @@
 					<a href="https://elpais.com/cultura/2019/04/12/actualidad/1555086159_471684.html">Acceso a la noticia</a>
 				</div>
 			</article>
-			<article class="Formato">
+			<article class="flex">
 				<div>
 					<h2>El "ser o no ser" que peligró en 'Hamlet'</h2>
 					<p>Diana Damrau, Carlos Álvarez y Celso Albelo, voces de oro en dos funciones en el Liceo.</p>
@@ -88,7 +85,7 @@
 				</div>
 				<img class="imagenDerecha" src="../media/images/Noticia2.jpg" alt="Celso Albelo, Eve-Maud Hubeaux, Diana Damrau y Carlos Álvarez, voces de 'Hamlet', en el Liceo" title="Celso Albelo, Eve-Maud Hubeaux, Diana Damrau y Carlos Álvarez, voces de 'Hamlet', en el Liceo">
 			</article>
-			<article class="Formato">
+			<article class="flex">
 				<img class="imagenIzquierda" src="../media/images/Noticia3.jpg" alt="Un momento de la ópera" title="Un momento de la ópera">
 				<div>
 					<h2>Un 'Così' de equilibrios</h2>
@@ -97,7 +94,7 @@
 					<a href="https://www.laopiniondemalaga.es/cultura-espectaculos/2018/03/06/cosi-equilibrios/991204.html">Acceso a la noticia</a>
 				</div>
 			</article>
-			<article class="Formato">
+			<article class="flex">
 				<div>
 					<h2>La historia de Antonia Brico, primera mujer en dirigir la Orquesta Filarmónica de Berlín</h2>
 					<p>La cineasta holandesa Maria Peters recoge la trayectoria de esta desconocida aunque destacada figura en el film 'La directora de Orquesta'.</p>

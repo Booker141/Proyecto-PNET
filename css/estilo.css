@@ -1,16 +1,12 @@
 @media (min-width: 200px) {
-	.pagina {
+	body{
 		background-color: #FFFFFF;
 		height: 100%;
 		margin: 0;
 	}
 
-	#footer{
-		bottom: 0;
-		width: 100%;
-		background-color: #1E1E20;
-	}
 
+	/*===HEADER===*/
 	#logo{
 		background-color: #FFFFFF;
 		width: 12vw;
@@ -21,7 +17,7 @@
 		margin-bottom: -2%;
 	}
 
-	.header{
+	#menuppal{
 		background-color: #1E1E20;
 		background-position: 20% 60%;
 		background-size: 40%;
@@ -34,7 +30,7 @@
 		margin-left: 3%;
 	}
 
-	.header a{
+	#menuppal a{
 		margin-left: 1%;
 		margin-right: 0.5%;
 		padding-left: 2.9%;
@@ -44,11 +40,7 @@
 		font-size: 1.25vw;
 	}
 
-	#menu{
-		display:inline;
-	}
-
-	.dropdown-menu{
+	.dropdown-menu{		/*Submenús del menú principal*//*Modificación de clase ya existente en bootstrap*/
 		background-color: #1E1E20;
 		padding-left: 1%;
 		border-radius: 0px;
@@ -56,19 +48,14 @@
 		height: auto;
 	}
 
-	.dropdown-item:hover{
+	.dropdown-item:hover{	/*Items de submenús*//*Modificación de clase ya existente en bootstrap*/
 		background-color: #1E1E20;
 		color: #FFF;
 	}
 
-	.contenedor{
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		padding: 0%;
-	}
 
-	.breadcrumb{
+	/*===BREADCRUMB===*/
+	.breadcrumb{	/*Navegación escalonada*//*Modificación de clase ya existente en bootstrap*/
 		background-color: #FFF;
 		margin-left: 3%;
 		margin-right: 8%;
@@ -76,7 +63,7 @@
 		margin-bottom: -5%;
 	}
 
-	.breadcrumb-item{
+	.breadcrumb-item{	/*Elementos de la navegación escalonada*//*Modificación de clase ya existente en bootstrap*/
 		font-family: 'Viga';
 		font-size: 1.5vw;
 	}
@@ -85,6 +72,8 @@
 		color: #962715;
 	}
 
+
+	/*===CONTENIDO===*/
 	section{
 		margin: 4%;
 	}
@@ -134,15 +123,8 @@
 		border: 1px solid black;
 	}
 
-	.programImg{
-		max-width: 45%;
-		height: auto;
-	}
 
-	.aladerecha{
-		text-align: right;
-	}
-
+	/*===FOOTER===*/
 	footer{
 		background-color: #1E1E20;
 		padding-top: 4%;
@@ -175,125 +157,42 @@
 		text-align: center;
 	}
 
-	.lessmargin{
+	.lessmargin{	/*Reduce el espacio de interlineado en la navegación del footer*/
 		margin-bottom: 0%;
 	}
 
-	.columna{
+	.columna{	/*Cada una de las que conforman el footer*/
 		float: left;
 		width: 33%;
 	}
 
-	.reducedclickarea{
-		display: block;
-		padding: 1%;
-	}
-
-	.rrss{
+	.rrss{	/*Tamaño de los logos de las redes sociales*/
 		width: 12%;
 		height: 12%;
 		margin-left: 1.5%;
 		margin-right: 1.5%;
 	}
 
-	#redes{
+	#redes{	/*El bloque donde se muestran las redes sociales*/
 		text-align: center;
 		margin-bottom: 5%;
 	}
 	
-	#doscolumnas{
+	
+	/*===ESTILO DE BLOQUES===*/
+	.flex{	/*Bloque que permite la división del contenido en columnas*/
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
 	}
 	
-	#flex-aside{
-		width: 25%;
-		margin-left: 3%;
-		font-family: 'Raleway';
-		font-size: 1.25vw;
-		color: #BBC3C6;
-		margin-top: 9%;
-	}
-	
-	#flex-content{
-		width: 75%;
-	}
-	
-	aside h1{
-		font-family: 'Viga';
-		color: #1E1E20;
-		font-size: 3vw;
-		margin-bottom: 20%;
-	}
-	
-	aside a, article a{
-		color: #962715;
-		font-size: 1.5vw;
-	}
-	
-	aside li{
-		margin-top: 10%;
-		margin-left: -5%;
-	}
-	
-	#quienessomos_1{
-		max-width: 40%;
-		height: auto;
-		margin-right: 3%;
-	}
-	
-	#quienessomos_2{
-		max-width: 60%;
-		height: auto;
-		margin-right: 3%;
-	}
-	
-	.infocontacto{
-		margin-top: 3%;
-		display: flex;
-		
-	}
-	
-	.aladerecha{
-		justify-content: right;
-	}
-	
-	#quienessomos_formas{
-		display: flex;
-		justify-content: space-between;
-	}
-	
-	.quienessomos_rrss{
-		color: #962715;
-		font-family: 'Raleway';
-		font-size: 1.6vw;
-	}
-	
-	.quienessomos_rrss:hover{
-		color: #BBC3C6;
-	}
-	
-	.quienessomos_rrss_img{
-		width: 6vw;
-	}
-	
-	.wrapper{
-		min-height: 100%;
-		margin-bottom: -50px;
-	}
-	
-	.push{
-		height: 50px;
-	}
-	
-	.imagenIzquierda{
+	.imagenIzquierda{	/*Imágenes a la izquierda en la división de dos columnas*/
 		margin-right: 5%;
 		max-width: 45%;
 		height: auto;
 	}
 	
-	.imagenDerecha{
+	.imagenDerecha{	/*Imágenes a la derecha en la división en dos columnas*/
 		margin-left: 5%;
 		max-width: 45%;
 		height: auto;
