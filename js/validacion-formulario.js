@@ -163,7 +163,7 @@ function nacimientoOK(fecha){
  */
 
 function esSeleccionado(indice){
-    if(indice != 0 && indice != 1 && indice != 2 && indice != 3){
+    if(indice != 4 && indice != 1 && indice != 2 && indice != 3){
         return false;
     } else return true;
 }

@@ -10,24 +10,36 @@
 	#logo{
 		background-color: #FFFFFF;
 		width: 12vw;
-		margin-left: 2%;
+		margin-left: 15%;
 	}
 
 	header{
 		margin-bottom: -2%;
+		display: flex;
 	}
 
 	#menuppal{
 		background-color: #1E1E20;
-		background-position: 20% 60%;
-		background-size: 40%;
+		background-size: 39%;
 		padding-left: 3%;
-		padding-top: 1%;
-		padding-bottom: 1%;
-		padding-right: 2.5%;
+		padding-top: 1.6vw;
+		padding-bottom: 1vw;
+		padding-right: 2.5vw;
 		font-family: 'Raleway';
 		color: #BBC3C6;
 		margin-left: 3%;
+		display: flex;
+		justify-content: space-between;
+		width: 80%;
+		margin-bottom: 3%;
+		margin-top: 3%;
+		vertical-align: middle;
+	}
+	
+	#menuppal li{
+		display: inline;
+		margin-right: 2%;
+		vertical-align: middle;
 	}
 
 	#menuppal a{
@@ -37,14 +49,15 @@
 		padding-right: 2.9%;
 		color: #BBC3C6;
 		font-weight: bold;
-		font-size: 1.25vw;
+		font-size: 1.5vw;
+		vertical-align: middle;
 	}
 
 	.dropdown-menu{		/*Submenús del menú principal*//*Modificación de clase ya existente en bootstrap*/
 		background-color: #1E1E20;
 		padding-left: 1%;
 		border-radius: 0px;
-		width: 14vw;
+		width: 16vw;
 		height: auto;
 	}
 
@@ -146,6 +159,7 @@
 		text-align: center;
 		margin-bottom: 10%;
 		font-size: 2vw;
+		font-weight: bold;
 	}
 
 	footer a{
