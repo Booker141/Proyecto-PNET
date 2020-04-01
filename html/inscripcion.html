@@ -58,30 +58,57 @@
 			<h2>Inscripción</h2>
 			<form id="formulario" onsubmit="return validacion();" action="#" method="post">
 				<p>Para realizar la inscripción, introduzca sus datos en los siguientes campos:</p>
-				<label>Nombre (*):</label>
-				<input required type="text" id="Nombre" name="nombre" placeholder="Introduzca su nombre"><br>
-				<label>Apellidos (*):</label>
-				<input required type="text" id="Apellidos" name="apellidos" placeholder="Introduzca su apellido"><br>
-				<label>Email (*):</label>
-				<input required type="email" id="Email" name="email" placeholder="Introduzca su e-mail"><br>
-				<label>DNI:</label>
-				<input type="text" name="DNI" id="DNI" minlength="7" maxlength="11" placeholder="Introduzca su DNI"><br>
-				<label>Fecha de nacimiento (*):</label>
-				<input type="date" id="FechaNac" name="fecha_nac" min="1900-01-01" max="2014-12-31"><br>
-				<label>¿Quién compuso óperas tan conocidas como "El barbero de Sevilla" o "Guillermo Tell"? (*):</label>
-				<input type="text" id="Pregunta" name="pregunta" placeholder="Introduzca su respuesta"><br>
-				<label>Seleccione el tipo de inscripción que desea realizar (*):</label>
-				<select required id="Inscripcion" name="tipo_inscripción">
-					<option selected label="== INSCRIPCIONES =="></option>
-					<option value="1">Inscripción lite: 40&euro;</option>
-					<option value="2">Inscripción medium: 60&euro;</option>
-					<option value="3">Inscripción deluxe: 70&euro;</option>
-					<option value="4">Inscripción luxury: 100&euro;</option>
-				</select><br>
-				<label>Fecha de salida (*):</label>
-				<input type="date" id="Salida" name="salida" min="2020-06-26" max="2020-06-27"><br>
-				<label>Fecha de regreso (*):</label>
-				<input type="date" id="Vuelta" name="vuelta" min="2020-06-26" max="2020-06-27"><br>
+				<label for="Nombre">
+					Nombre (*):
+					<input required type="text" id="Nombre" name="nombre" placeholder="Introduzca su nombre">
+				</label>
+				<br>
+				<label for="Apellidos">
+					Apellidos (*):
+					<input required type="text" id="Apellidos" name="apellidos" placeholder="Introduzca su apellido">
+				</label>
+				<br>
+				<label for="Email">
+					Email (*):
+					<input required type="email" id="Email" name="email" placeholder="Introduzca su e-mail">
+				</label>
+				<br>
+				<label for="DNI">
+					DNI:
+					<input type="text" name="DNI" id="DNI" minlength="7" maxlength="11" placeholder="Introduzca su DNI">
+				</label>
+				<br>
+				<label for="FechaNac">
+					Fecha de nacimiento (*):
+					<input type="date" id="FechaNac" name="fecha_nac" min="1900-01-01" max="2014-12-31">
+				</label>
+				<br>
+				<label for="Pregunta">
+					¿Quién compuso óperas tan conocidas como "El barbero de Sevilla" o "Guillermo Tell"? (*):
+					<input type="text" id="Pregunta" name="pregunta" placeholder="Introduzca su respuesta">
+				</label>
+				<br>
+				<label for="Inscripcion">
+					Seleccione el tipo de inscripción que desea realizar (*):
+					<select required id="Inscripcion" name="tipo_inscripción">
+						<option selected label="== INSCRIPCIONES =="></option>
+						<option value="1">Inscripción lite: 40&euro;</option>
+						<option value="2">Inscripción medium: 60&euro;</option>
+						<option value="3">Inscripción deluxe: 70&euro;</option>
+						<option value="4">Inscripción luxury: 100&euro;</option>
+					</select>
+				</label>
+				<br>
+				<label for="Salida">
+					Fecha de salida (*):
+					<input type="date" id="Salida" name="salida" min="2020-06-26" max="2020-06-27">
+				</label>
+				<br>
+				<label for="Vuelta">
+					Fecha de regreso (*):
+					<input type="date" id="Vuelta" name="vuelta" min="2020-06-26" max="2020-06-27">
+				</label>
+				<br>
 				<span id="centeredbutton"><input type="submit" value="Enviar" name="enviar"></span>
 			</form>
 		</article>
